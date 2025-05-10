@@ -1,0 +1,222 @@
+[
+  {
+    "question": "What is the primary criterion for splitting nodes in a decision tree using the ID3 algorithm?",
+    "options": [
+      "Information gain",
+      "Gini impurity",
+      "Entropy reduction",
+      "Gain ratio"
+    ],
+    "answer": "Information gain",
+    "explanation": "ID3 selects splits based on the maximum information gain."
+  },
+  {
+    "question": "Which situation may cause a decision tree to overfit the training data?",
+    "options": [
+      "Using a small tree depth",
+      "Pruning the tree",
+      "Allowing unlimited tree growth",
+      "Using Gini impurity as a criterion"
+    ],
+    "answer": "Allowing unlimited tree growth",
+    "explanation": "Unrestricted tree depth allows the model to fit noise in the training data, leading to overfitting."
+  },
+  {
+    "question": "What is a consequence of using an unpruned decision tree?",
+    "options": [
+      "Better generalization",
+      "Reduced training time",
+      "Increased test accuracy",
+      "High variance"
+    ],
+    "answer": "High variance",
+    "explanation": "Unpruned trees are complex and sensitive to training data, resulting in high variance."
+  },
+  {
+    "question": "Why is Gini impurity preferred over entropy in some implementations?",
+    "options": [
+      "It is more accurate",
+      "It handles missing data better",
+      "It is faster to compute",
+      "It produces smaller trees"
+    ],
+    "answer": "It is faster to compute",
+    "explanation": "Gini impurity avoids logarithmic calculations, making it computationally cheaper than entropy."
+  },
+  {
+    "question": "Which condition typically signals the need to stop growing a decision tree?",
+    "options": [
+      "All features are continuous",
+      "Training accuracy reaches 100%",
+      "All samples at a node belong to the same class",
+      "Depth exceeds number of features"
+    ],
+    "answer": "All samples at a node belong to the same class",
+    "explanation": "Pure nodes with uniform class labels do not benefit from further splitting."
+  },
+  {
+    "question": "Which technique is most commonly used to reduce overfitting in decision trees?",
+    "options": [
+      "Increasing tree depth",
+      "Using one-hot encoding",
+      "Tree pruning",
+      "Feature scaling"
+    ],
+    "answer": "Tree pruning",
+    "explanation": "Pruning removes branches that do not contribute to generalization, reducing overfitting."
+  },
+  {
+    "question": "How does reduced error pruning differ from cost complexity pruning?",
+    "options": [
+      "It uses a separate validation set",
+      "It penalizes splits by depth",
+      "It uses Gini index instead of entropy",
+      "It trains trees in a greedy fashion"
+    ],
+    "answer": "It uses a separate validation set",
+    "explanation": "Reduced error pruning evaluates performance on a validation set to decide pruning."
+  },
+  {
+    "question": "Which statement about decision tree splits is true?",
+    "options": [
+      "Splits are always axis-aligned",
+      "Splits must be binary",
+      "Splits maximize training error",
+      "Splits minimize feature count"
+    ],
+    "answer": "Splits are always axis-aligned",
+    "explanation": "Traditional decision trees make splits that align with feature axes (e.g., x > 3)."
+  },
+  {
+    "question": "What happens if a decision tree is trained on a dataset with highly correlated features?",
+    "options": [
+      "The tree ignores correlated features",
+      "The tree becomes more robust",
+      "The tree may overfit",
+      "Correlated features improve interpretability"
+    ],
+    "answer": "The tree may overfit",
+    "explanation": "Correlated features can lead to redundant splits and overfitting."
+  },
+  {
+    "question": "What type of bias-variance tradeoff is typical for shallow decision trees?",
+    "options": [
+      "Low bias, high variance",
+      "High bias, high variance",
+      "High bias, low variance",
+      "Low bias, low variance"
+    ],
+    "answer": "High bias, low variance",
+    "explanation": "Shallow trees are simple and underfit, resulting in high bias but stable predictions."
+  },
+  {
+    "question": "How does feature importance get computed in decision trees?",
+    "options": [
+      "By counting the number of splits using a feature",
+      "By the decrease in impurity when a feature is used",
+      "By mutual information with the target",
+      "By correlation with the output variable"
+    ],
+    "answer": "By the decrease in impurity when a feature is used",
+    "explanation": "Feature importance reflects how much a feature reduces node impurity across the tree."
+  },
+  {
+    "question": "Why are decision trees prone to overfitting in noisy datasets?",
+    "options": [
+      "They perform feature scaling",
+      "They fail to handle missing data",
+      "They can perfectly fit noise in training data",
+      "They are linear models"
+    ],
+    "answer": "They can perfectly fit noise in training data",
+    "explanation": "Decision trees can split to fit every training point, including noise."
+  },
+  {
+    "question": "What is the typical time complexity of training a decision tree?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n d log n)"
+    ],
+    "answer": "O(n d log n)",
+    "explanation": "With n samples and d features, sorting for splits at each level gives O(n d log n) complexity."
+  },
+  {
+    "question": "Which scenario favors using a decision tree model?",
+    "options": [
+      "High-dimensional sparse data",
+      "Data with strong linear trends",
+      "Data with mixed categorical and numerical features",
+      "Very large datasets with minimal memory"
+    ],
+    "answer": "Data with mixed categorical and numerical features",
+    "explanation": "Decision trees handle heterogeneous feature types naturally."
+  },
+  {
+    "question": "Why might a decision tree split on an irrelevant feature?",
+    "options": [
+      "Because of zero information gain",
+      "Because of numerical instability",
+      "Due to a greedy splitting heuristic",
+      "Because of over-regularization"
+    ],
+    "answer": "Due to a greedy splitting heuristic",
+    "explanation": "The greedy nature of decision trees may lead to suboptimal splits based on local gains."
+  },
+  {
+    "question": "What is the role of 'minimum samples per leaf' in a decision tree?",
+    "options": [
+      "Controls maximum depth",
+      "Prevents deep pruning",
+      "Reduces overfitting by avoiding overly specific rules",
+      "Ensures feature standardization"
+    ],
+    "answer": "Reduces overfitting by avoiding overly specific rules",
+    "explanation": "Larger leaf sizes lead to more generalized trees, improving generalization."
+  },
+  {
+    "question": "Which of the following is NOT a typical use of decision trees?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Feature selection"
+    ],
+    "answer": "Clustering",
+    "explanation": "Decision trees are not designed for unsupervised tasks like clustering."
+  },
+  {
+    "question": "In classification trees, what does Gini impurity measure?",
+    "options": [
+      "The likelihood of splitting on irrelevant features",
+      "The impurity or heterogeneity of a node",
+      "The depth of a node",
+      "The complexity of the tree"
+    ],
+    "answer": "The impurity or heterogeneity of a node",
+    "explanation": "Gini impurity quantifies the chance of mislabeling a randomly chosen sample."
+  },
+  {
+    "question": "Why is pruning generally beneficial for decision trees?",
+    "options": [
+      "It increases tree interpretability",
+      "It guarantees 100% training accuracy",
+      "It improves feature scaling",
+      "It enhances numerical stability"
+    ],
+    "answer": "It increases tree interpretability",
+    "explanation": "Pruned trees are simpler, making them easier to interpret and often generalize better."
+  },
+  {
+    "question": "Which metric would best reflect a tree\u2019s tendency to overfit?",
+    "options": [
+      "High validation error",
+      "High training error",
+      "Large tree depth and low validation accuracy",
+      "Low variance across folds"
+    ],
+    "answer": "Large tree depth and low validation accuracy",
+    "explanation": "A deep tree fitting training data but failing on validation data suggests overfitting."
+  }
+]

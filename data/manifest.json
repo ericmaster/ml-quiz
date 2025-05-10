@@ -1,0 +1,49 @@
+{
+  "name": "Machine Learning",
+  "topics": [
+    {
+      "file": "intro.json",
+      "topic": "Introductory Concepts"
+    },
+    {
+      "file": "linear_logistic.json",
+      "topic": "Linear and Logistic Regression"
+    },
+    {
+      "file": "regularization.json",
+      "topic": "Regularization"
+    },
+    {
+      "file": "model_selection.json",
+      "topic": "Model Selection"
+    },
+    {
+      "file": "pca.json",
+      "topic": "Principal Components Analysis (PCA)"
+    },
+    {
+      "file": "nn.json",
+      "topic": "Neural Networks"
+    },
+    {
+      "file": "transfer_learning.json",
+      "topic": "Transfer Learning"
+    },
+    {
+      "file": "knn.json",
+      "topic": "k-Nearest Neighbors (k-NN)"
+    },
+    {
+      "file": "svm.json",
+      "topic": "SVM"
+    },
+    {
+      "file": "decision_tree.json",
+      "topic": "Decision Trees"
+    },
+    {
+      "file": "test.json",
+      "topic": "Preguntas de Prueba"
+    }
+  ]
+}

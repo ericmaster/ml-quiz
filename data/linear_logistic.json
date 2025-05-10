@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Why does linear regression perform poorly when multicollinearity is present?",
+    "options": [
+      "The optimization algorithm fails to converge",
+      "The model becomes too simple to capture interactions",
+      "The variance of the coefficient estimates increases significantly",
+      "The loss function becomes non-convex"
+    ],
+    "answer": "The variance of the coefficient estimates increases significantly",
+    "explanation": "Multicollinearity inflates coefficient variance, making estimates unstable."
+  },
+  {
+    "question": "Which of the following is **not** an assumption of linear regression?",
+    "options": [
+      "Homoscedasticity of residuals",
+      "Independence of errors",
+      "Normality of predictors",
+      "Linearity between features and target"
+    ],
+    "answer": "Normality of predictors",
+    "explanation": "Linear regression assumes normality of errors, not predictors."
+  },
+  {
+    "question": "What does the decision boundary of logistic regression represent?",
+    "options": [
+      "Where the model predicts class probability exactly 0.5",
+      "Where the loss function reaches its minimum",
+      "Where the gradient of the loss is zero",
+      "Where the log-odds ratio equals 0.25"
+    ],
+    "answer": "Where the model predicts class probability exactly 0.5",
+    "explanation": "This is the threshold where logistic regression switches predicted classes."
+  },
+  {
+    "question": "Why can't logistic regression be solved using the normal equation?",
+    "options": [
+      "The normal equation requires discrete labels",
+      "The logistic loss is not differentiable",
+      "The cost function is not convex",
+      "The logistic function leads to a non-linear optimization problem"
+    ],
+    "answer": "The logistic function leads to a non-linear optimization problem",
+    "explanation": "Logistic regression requires iterative methods due to non-linearity in parameters."
+  },
+  {
+    "question": "Which interpretation of the logistic regression coefficient is correct?",
+    "options": [
+      "Change in predicted probability for a unit change in the feature",
+      "Log-odds ratio change for a unit change in the feature",
+      "Absolute change in accuracy for a unit feature change",
+      "Effect of a feature on variance of residuals"
+    ],
+    "answer": "Log-odds ratio change for a unit change in the feature",
+    "explanation": "Logistic coefficients represent the effect on the log-odds."
+  },
+  {
+    "question": "Why is feature scaling important in gradient descent for linear regression?",
+    "options": [
+      "It prevents overfitting",
+      "It guarantees convexity",
+      "It ensures faster and more stable convergence",
+      "It transforms non-linear problems into linear ones"
+    ],
+    "answer": "It ensures faster and more stable convergence",
+    "explanation": "Scaling improves conditioning of the cost surface for gradient-based methods."
+  },
+  {
+    "question": "Which loss function is typically used for training logistic regression?",
+    "options": [
+      "Mean Squared Error",
+      "Hinge Loss",
+      "Cross-Entropy Loss",
+      "Huber Loss"
+    ],
+    "answer": "Cross-Entropy Loss",
+    "explanation": "Cross-entropy is well-suited for probabilistic classification models like logistic regression."
+  },
+  {
+    "question": "Which regularization technique tends to produce sparse solutions in linear models?",
+    "options": [
+      "Ridge regression",
+      "Lasso regression",
+      "Bayesian regression",
+      "Gradient boosting"
+    ],
+    "answer": "Lasso regression",
+    "explanation": "L1 regularization in Lasso promotes sparsity by shrinking some coefficients to zero."
+  },
+  {
+    "question": "Which of the following indicates a model suffering from high bias in linear regression?",
+    "options": [
+      "High R-squared on training data",
+      "Low training error but high test error",
+      "Low R-squared and high training error",
+      "Large variance in predictions across folds"
+    ],
+    "answer": "Low R-squared and high training error",
+    "explanation": "High bias implies poor fit even on training data."
+  },
+  {
+    "question": "Which condition can lead to logistic regression failing to converge?",
+    "options": [
+      "Linearly separable classes",
+      "Low-dimensional data",
+      "Standardized features",
+      "Balanced dataset"
+    ],
+    "answer": "Linearly separable classes",
+    "explanation": "Perfect separation causes parameter divergence in logistic regression."
+  },
+  {
+    "question": "Which of the following best describes the purpose of the sigmoid function in logistic regression?",
+    "options": [
+      "To compute loss",
+      "To linearize decision boundary",
+      "To map real values to probabilities",
+      "To normalize the input features"
+    ],
+    "answer": "To map real values to probabilities",
+    "explanation": "The sigmoid function outputs values in (0,1), making it suitable for probabilities."
+  },
+  {
+    "question": "In logistic regression, what does a high magnitude coefficient imply?",
+    "options": [
+      "High correlation between input and output",
+      "Greater confidence in predictions",
+      "Higher impact on decision boundary",
+      "Lower model complexity"
+    ],
+    "answer": "Higher impact on decision boundary",
+    "explanation": "Large coefficients steepen the sigmoid curve, affecting classification thresholds."
+  },
+  {
+    "question": "Which matrix operation is used in the closed-form solution of linear regression?",
+    "options": [
+      "Matrix inversion",
+      "Eigen decomposition",
+      "SVD",
+      "QR decomposition"
+    ],
+    "answer": "Matrix inversion",
+    "explanation": "The normal equation involves the inverse of \\( X^T X \\)."
+  },
+  {
+    "question": "How does logistic regression handle multiclass classification natively?",
+    "options": [
+      "By using a softmax function",
+      "By applying multiple binary classifiers",
+      "By fitting a decision tree",
+      "By incorporating hinge loss"
+    ],
+    "answer": "By using a softmax function",
+    "explanation": "Softmax regression generalizes logistic regression to multiclass settings."
+  },
+  {
+    "question": "Which of the following is **not** a typical use case for logistic regression?",
+    "options": [
+      "Credit default prediction",
+      "Spam detection",
+      "Image segmentation",
+      "Customer churn classification"
+    ],
+    "answer": "Image segmentation",
+    "explanation": "Image segmentation often requires spatially-aware or deep learning models."
+  },
+  {
+    "question": "In linear regression, what is the geometric interpretation of the coefficients?",
+    "options": [
+      "Slope of the tangent to the residual plot",
+      "Direction of the steepest descent",
+      "Projection of the target vector onto the feature space",
+      "Curvature of the error surface"
+    ],
+    "answer": "Projection of the target vector onto the feature space",
+    "explanation": "The least squares solution minimizes distance by projecting onto the span of features."
+  },
+  {
+    "question": "Which technique can be used to assess multicollinearity in linear regression?",
+    "options": [
+      "Boxplot",
+      "Variance Inflation Factor",
+      "Mean Squared Error",
+      "ROC Curve"
+    ],
+    "answer": "Variance Inflation Factor",
+    "explanation": "VIF quantifies how much a variable's variance is inflated due to collinearity."
+  },
+  {
+    "question": "Which statement about linear regression's error term is correct?",
+    "options": [
+      "It must have zero mean and be normally distributed",
+      "It can be any distribution as long as the mean is zero",
+      "It should be minimized using softmax",
+      "It should be ignored during training"
+    ],
+    "answer": "It can be any distribution as long as the mean is zero",
+    "explanation": "Only the zero-mean assumption is required for unbiased coefficient estimates."
+  },
+  {
+    "question": "What happens if a feature is constant in logistic regression?",
+    "options": [
+      "It dominates the prediction",
+      "It causes loss function to be non-convex",
+      "It has no effect on the model",
+      "It results in undefined coefficients"
+    ],
+    "answer": "It has no effect on the model",
+    "explanation": "Constant features provide no information and are effectively ignored."
+  },
+  {
+    "question": "What is the main advantage of using log-odds in logistic regression?",
+    "options": [
+      "Log-odds are easier to visualize than probabilities",
+      "They linearize the relationship between features and labels",
+      "They eliminate the need for gradient descent",
+      "They reduce dimensionality"
+    ],
+    "answer": "They linearize the relationship between features and labels",
+    "explanation": "Log-odds enable the model to express linear relationships with categorical outcomes."
+  }
+]

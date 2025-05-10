@@ -1,0 +1,222 @@
+[
+    {
+      "question": "What is the primary objective of Principal Component Analysis (PCA)?",
+      "options": [
+        "To perform supervised classification",
+        "To maximize class separation",
+        "To reduce dimensionality while preserving variance",
+        "To improve model regularization"
+      ],
+      "answer": "To reduce dimensionality while preserving variance",
+      "explanation": "PCA projects data onto a lower-dimensional space while retaining as much variance as possible."
+    },
+    {
+      "question": "Which of the following is NOT true about principal components?",
+      "options": [
+        "They are orthogonal to each other",
+        "They are linear combinations of the original features",
+        "They maximize the projected variance",
+        "They are chosen to minimize reconstruction error in original space"
+      ],
+      "answer": "They are chosen to minimize reconstruction error in original space",
+      "explanation": "PCA maximizes variance, not explicitly minimizes reconstruction error, although it indirectly reduces it."
+    },
+    {
+      "question": "In PCA, the direction of the first principal component corresponds to:",
+      "options": [
+        "The direction of maximum variance",
+        "The direction orthogonal to the least variance",
+        "The mean of the data",
+        "The direction of minimum variance"
+      ],
+      "answer": "The direction of maximum variance",
+      "explanation": "The first principal component captures the direction in which the data varies the most."
+    },
+    {
+      "question": "Which step is essential before applying PCA?",
+      "options": [
+        "One-hot encoding",
+        "Feature normalization",
+        "Clustering",
+        "Polynomial feature expansion"
+      ],
+      "answer": "Feature normalization",
+      "explanation": "PCA is sensitive to scale, so features must be normalized before application."
+    },
+    {
+      "question": "What does the eigenvalue associated with a principal component represent?",
+      "options": [
+        "The variance explained by the component",
+        "The bias introduced by the component",
+        "The correlation with the original features",
+        "The distance from the origin"
+      ],
+      "answer": "The variance explained by the component",
+      "explanation": "Eigenvalues quantify how much variance each principal component explains."
+    },
+    {
+      "question": "Which matrix is decomposed in PCA?",
+      "options": [
+        "Covariance matrix",
+        "Correlation matrix",
+        "Confusion matrix",
+        "Gram matrix"
+      ],
+      "answer": "Covariance matrix",
+      "explanation": "PCA involves eigen-decomposition of the data's covariance matrix."
+    },
+    {
+      "question": "If PCA is performed on data with correlated features, the resulting components will be:",
+      "options": [
+        "Correlated",
+        "Redundant",
+        "Orthogonal",
+        "Dependent"
+      ],
+      "answer": "Orthogonal",
+      "explanation": "PCA constructs principal components to be orthogonal, removing correlation."
+    },
+    {
+      "question": "What happens when PCA is applied to already decorrelated features?",
+      "options": [
+        "It enhances correlation",
+        "It acts as a feature selector",
+        "It aligns features with original axes",
+        "It retains the same directions"
+      ],
+      "answer": "It retains the same directions",
+      "explanation": "When features are decorrelated, PCA may return axes similar to original ones."
+    },
+    {
+      "question": "In PCA, the total variance in the data is equal to:",
+      "options": [
+        "The number of features",
+        "The number of samples",
+        "The trace of the covariance matrix",
+        "The sum of means of features"
+      ],
+      "answer": "The trace of the covariance matrix",
+      "explanation": "The trace of the covariance matrix equals the total variance across all features."
+    },
+    {
+      "question": "What is a potential drawback of PCA?",
+      "options": [
+        "It removes noise",
+        "It is computationally inexpensive",
+        "It loses interpretability of features",
+        "It increases feature dimensions"
+      ],
+      "answer": "It loses interpretability of features",
+      "explanation": "PCA transforms original features into linear combinations, making them harder to interpret."
+    },
+    {
+      "question": "Which of the following metrics is most appropriate for selecting the number of principal components?",
+      "options": [
+        "Explained variance ratio",
+        "Mean squared error",
+        "Euclidean distance",
+        "Silhouette score"
+      ],
+      "answer": "Explained variance ratio",
+      "explanation": "Explained variance ratio helps determine how much variance is captured by each component."
+    },
+    {
+      "question": "Which of the following is true about PCA and noise?",
+      "options": [
+        "PCA amplifies noise",
+        "PCA always removes noise",
+        "PCA can reduce noise by discarding low-variance components",
+        "PCA increases signal-to-noise ratio"
+      ],
+      "answer": "PCA can reduce noise by discarding low-variance components",
+      "explanation": "Low-variance components often contain noise, and PCA can discard them."
+    },
+    {
+      "question": "How does PCA perform on non-linear data structures like spirals or manifolds?",
+      "options": [
+        "Perfectly",
+        "Fails to capture structure",
+        "Learns clusters",
+        "Increases dimensionality"
+      ],
+      "answer": "Fails to capture structure",
+      "explanation": "PCA is a linear method and fails to capture complex, non-linear structures."
+    },
+    {
+      "question": "Which technique generalizes PCA to non-linear transformations?",
+      "options": [
+        "LDA",
+        "Kernel PCA",
+        "t-SNE",
+        "ICA"
+      ],
+      "answer": "Kernel PCA",
+      "explanation": "Kernel PCA uses the kernel trick to map data into a higher-dimensional space for non-linear patterns."
+    },
+    {
+      "question": "What is the geometric interpretation of PCA in terms of projection?",
+      "options": [
+        "It rotates the axes to align with the data",
+        "It projects data orthogonally onto principal axes",
+        "It reflects data across the mean",
+        "It scales all features to unit norm"
+      ],
+      "answer": "It projects data orthogonally onto principal axes",
+      "explanation": "PCA finds orthogonal directions of maximum variance and projects the data onto them."
+    },
+    {
+      "question": "If two features are uncorrelated, what does PCA do with them?",
+      "options": [
+        "It removes both features",
+        "It rotates them to align with original features",
+        "It retains them as is",
+        "It combines them into a single component"
+      ],
+      "answer": "It retains them as is",
+      "explanation": "If features are uncorrelated and variances differ, PCA retains their structure."
+    },
+    {
+      "question": "Which of the following best describes a 'scree plot'?",
+      "options": [
+        "A histogram of PCA scores",
+        "A plot of eigenvalues vs component index",
+        "A plot of residuals",
+        "A plot of original feature variances"
+      ],
+      "answer": "A plot of eigenvalues vs component index",
+      "explanation": "Scree plots help determine the number of principal components to retain by showing eigenvalue drops."
+    },
+    {
+      "question": "What kind of transformation is applied by PCA?",
+      "options": [
+        "Non-linear scaling",
+        "Orthogonal linear transformation",
+        "Gradient descent optimization",
+        "Piecewise affine transformation"
+      ],
+      "answer": "Orthogonal linear transformation",
+      "explanation": "PCA performs a linear, orthogonal transformation based on eigenvectors of the covariance matrix."
+    },
+    {
+      "question": "Which property of PCA makes it invertible if all components are retained?",
+      "options": [
+        "Its eigenvectors form a complete basis",
+        "It uses orthonormal weights",
+        "It has no bias term",
+        "It maximizes entropy"
+      ],
+      "answer": "Its eigenvectors form a complete basis",
+      "explanation": "Retaining all components allows exact reconstruction due to the orthonormal basis."
+    },
+    {
+      "question": "What does it mean when a component in PCA has a small eigenvalue?",
+      "options": [
+        "It contains outliers",
+        "It explains little variance",
+        "It has high noise content",
+        "It is redundant"
+      ],
+      "answer": "It explains little variance",
+      "explanation": "Smaller eigenvalues correspond to components that explain less of the data’s variability."
+    }
+  ]

@@ -1,0 +1,223 @@
+[
+    {
+      "question": "What is the primary reason for using activation functions in neural networks?",
+      "options": [
+        "To initialize the weights",
+        "To introduce non-linearity into the model",
+        "To reduce the number of neurons",
+        "To compute the loss function"
+      ],
+      "answer": "To introduce non-linearity into the model",
+      "explanation": "Without activation functions, a neural network with only linear operations collapses into a linear model regardless of depth."
+    },
+    {
+      "question": "Which of the following problems is most likely to occur with sigmoid activation in deep networks?",
+      "options": [
+        "Exploding gradients",
+        "Vanishing gradients",
+        "Overfitting",
+        "Underfitting"
+      ],
+      "answer": "Vanishing gradients",
+      "explanation": "Sigmoid squashes values into a narrow range, causing gradients to diminish through layers."
+    },
+    {
+      "question": "What role does backpropagation play in training a neural network?",
+      "options": [
+        "It initializes the weights",
+        "It forwards the input data through the network",
+        "It updates weights by computing gradients",
+        "It prunes redundant neurons"
+      ],
+      "answer": "It updates weights by computing gradients",
+      "explanation": "Backpropagation computes the gradient of the loss function with respect to each weight using the chain rule."
+    },
+    {
+      "question": "Which of the following best describes the universal approximation theorem?",
+      "options": [
+        "Any neural network can solve all problems",
+        "A single hidden layer can approximate any continuous function given enough neurons",
+        "All functions can be represented exactly with ReLU activations",
+        "Deep networks always generalize better than shallow ones"
+      ],
+      "answer": "A single hidden layer can approximate any continuous function given enough neurons",
+      "explanation": "The theorem states that a feedforward network with one hidden layer and sufficient neurons can approximate any continuous function."
+    },
+    {
+      "question": "Which initialization strategy is typically used with ReLU activations to prevent vanishing/exploding gradients?",
+      "options": [
+        "Xavier initialization",
+        "Zero initialization",
+        "He initialization",
+        "Random uniform initialization"
+      ],
+      "answer": "He initialization",
+      "explanation": "He initialization scales weights to accommodate the ReLU activation function's properties."
+    },
+    {
+      "question": "Why might a deep neural network suffer from overfitting?",
+      "options": [
+        "Too few parameters",
+        "Too small dataset",
+        "Lack of activation functions",
+        "Too many pooling layers"
+      ],
+      "answer": "Too small dataset",
+      "explanation": "Deep networks with many parameters can memorize small datasets, leading to overfitting."
+    },
+    {
+      "question": "Which of the following is NOT a purpose of dropout in neural networks?",
+      "options": [
+        "Reducing overfitting",
+        "Improving generalization",
+        "Speeding up convergence",
+        "Randomly deactivating neurons during training"
+      ],
+      "answer": "Speeding up convergence",
+      "explanation": "Dropout often slows convergence but improves generalization by reducing reliance on specific neurons."
+    },
+    {
+      "question": "Which activation function is most susceptible to the 'dying neuron' problem?",
+      "options": [
+        "ReLU",
+        "Tanh",
+        "Sigmoid",
+        "Softmax"
+      ],
+      "answer": "ReLU",
+      "explanation": "ReLU can output zero for all inputs if weights are not updated, effectively killing the neuron."
+    },
+    {
+      "question": "In which situation is batch normalization most beneficial?",
+      "options": [
+        "Shallow networks",
+        "Networks without dropout",
+        "Deep networks with internal covariate shift",
+        "When using SGD without momentum"
+      ],
+      "answer": "Deep networks with internal covariate shift",
+      "explanation": "Batch normalization reduces internal covariate shift, stabilizing learning in deep networks."
+    },
+    {
+      "question": "What is the output of a softmax activation function?",
+      "options": [
+        "Binary value for each class",
+        "Sum of inputs",
+        "One-hot encoding",
+        "Probability distribution over classes"
+      ],
+      "answer": "Probability distribution over classes",
+      "explanation": "Softmax squashes outputs into [0,1] and ensures they sum to 1, making them interpretable as probabilities."
+    },
+    {
+      "question": "What is the main advantage of using rectified linear units (ReLU) over sigmoid or tanh?",
+      "options": [
+        "Always outputs zero",
+        "Ensures non-linearity is not required",
+        "Mitigates vanishing gradient problem",
+        "Provides probabilistic interpretation"
+      ],
+      "answer": "Mitigates vanishing gradient problem",
+      "explanation": "ReLU avoids saturation in the positive domain, thus maintaining stronger gradients."
+    },
+    {
+      "question": "Which property makes neural networks ‘deep’?",
+      "options": [
+        "Number of neurons per layer",
+        "Use of activation functions",
+        "Having multiple hidden layers",
+        "Training on large datasets"
+      ],
+      "answer": "Having multiple hidden layers",
+      "explanation": "Deep networks are defined by their depth—i.e., multiple hidden layers."
+    },
+    {
+      "question": "Which optimizer adapts the learning rate for each parameter individually?",
+      "options": [
+        "SGD",
+        "Momentum",
+        "RMSProp",
+        "Adam"
+      ],
+      "answer": "Adam",
+      "explanation": "Adam optimizer adjusts learning rates individually using estimates of first and second moments."
+    },
+    {
+      "question": "Why is weight initialization important in training neural networks?",
+      "options": [
+        "Prevents overfitting",
+        "Increases network depth",
+        "Ensures faster convergence and stable gradients",
+        "Determines activation function type"
+      ],
+      "answer": "Ensures faster convergence and stable gradients",
+      "explanation": "Poor initialization can cause vanishing/exploding gradients, slowing or preventing convergence."
+    },
+    {
+      "question": "Which function is typically used as a loss for binary classification in neural networks?",
+      "options": [
+        "Mean squared error",
+        "Categorical cross-entropy",
+        "Binary cross-entropy",
+        "Hinge loss"
+      ],
+      "answer": "Binary cross-entropy",
+      "explanation": "Binary cross-entropy is appropriate for binary outputs and models probability."
+    },
+    {
+      "question": "What is a potential consequence of using zero initialization for all weights in a neural network?",
+      "options": [
+        "Fast convergence",
+        "Symmetry breaking",
+        "All neurons learn the same features",
+        "Gradient explosion"
+      ],
+      "answer": "All neurons learn the same features",
+      "explanation": "Without random initialization, neurons become indistinguishable during training."
+    },
+    {
+      "question": "Which of the following is NOT typically a hyperparameter in neural networks?",
+      "options": [
+        "Number of layers",
+        "Learning rate",
+        "Weight gradients",
+        "Batch size"
+      ],
+      "answer": "Weight gradients",
+      "explanation": "Gradients are computed during training, not set as hyperparameters."
+    },
+    {
+      "question": "Which loss function would you choose for a multi-class classification problem with one-hot encoded labels?",
+      "options": [
+        "Mean squared error",
+        "Binary cross-entropy",
+        "Sparse categorical cross-entropy",
+        "Categorical cross-entropy"
+      ],
+      "answer": "Categorical cross-entropy",
+      "explanation": "It compares a probability distribution (from softmax) with a one-hot label vector."
+    },
+    {
+      "question": "Which learning problem is best suited to a neural network with softmax output and cross-entropy loss?",
+      "options": [
+        "Regression of house prices",
+        "Binary classification",
+        "Multi-class classification",
+        "Dimensionality reduction"
+      ],
+      "answer": "Multi-class classification",
+      "explanation": "Softmax + cross-entropy is the standard combination for multi-class classification tasks."
+    },
+    {
+      "question": "What is the primary function of an optimizer in neural network training?",
+      "options": [
+        "Store training history",
+        "Define the model structure",
+        "Adjust weights to minimize the loss",
+        "Reduce model size"
+      ],
+      "answer": "Adjust weights to minimize the loss",
+      "explanation": "Optimizers iteratively update model parameters to reduce prediction error."
+    }
+  ]
+  

@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Which of the following best describes the trade-off managed in the bias-variance decomposition?",
+    "options": [
+      "Reducing bias increases variance, and reducing variance increases bias",
+      "Reducing bias and variance simultaneously is always possible with more data",
+      "High bias models always have low error",
+      "High variance models generalize well to unseen data"
+    ],
+    "answer": "Reducing bias increases variance, and reducing variance increases bias",
+    "explanation": "Bias-variance trade-off is fundamental: reducing one often increases the other, impacting generalization."
+  },
+  {
+    "question": "Which condition is most likely to cause a model to underfit the training data?",
+    "options": [
+      "Using a linear model for a nonlinear relationship",
+      "Overtraining a deep neural network",
+      "Using a high-degree polynomial",
+      "Including irrelevant features"
+    ],
+    "answer": "Using a linear model for a nonlinear relationship",
+    "explanation": "Underfitting typically occurs when the model is too simple to capture the underlying structure."
+  },
+  {
+    "question": "Which of the following statements about overfitting is true?",
+    "options": [
+      "Overfitting leads to poor performance on the training set",
+      "Overfitting can occur even when training error is low",
+      "Overfitting is not a concern if you use cross-validation",
+      "Overfitting is solved only by adding more data"
+    ],
+    "answer": "Overfitting can occur even when training error is low",
+    "explanation": "Low training error with high validation error is a hallmark of overfitting."
+  },
+  {
+    "question": "Which concept does Pedro Domingos associate with the three ingredients of machine learning?",
+    "options": [
+      "Representation, Evaluation, Optimization",
+      "Bias, Variance, Complexity",
+      "Supervised, Unsupervised, Reinforcement",
+      "Accuracy, Precision, Recall"
+    ],
+    "answer": "Representation, Evaluation, Optimization",
+    "explanation": "Pedro Domingos outlines these as the essential components of any ML algorithm."
+  },
+  {
+    "question": "What role does the hypothesis class play in supervised learning?",
+    "options": [
+      "It defines the space of models the learner can choose from",
+      "It determines the number of training examples required",
+      "It acts as the loss function during training",
+      "It replaces the need for regularization"
+    ],
+    "answer": "It defines the space of models the learner can choose from",
+    "explanation": "The hypothesis class determines the complexity and expressiveness of possible solutions."
+  },
+  {
+    "question": "In which situation would a model most likely suffer from high variance?",
+    "options": [
+      "Very flexible model trained on small data",
+      "Rigid model trained on large data",
+      "Simplistic model trained with gradient descent",
+      "Model with regularization applied"
+    ],
+    "answer": "Very flexible model trained on small data",
+    "explanation": "Flexible models on limited data tend to fit noise, leading to high variance."
+  },
+  {
+    "question": "Which of the following is **not** a typical assumption in supervised learning?",
+    "options": [
+      "Training and test data are i.i.d.",
+      "Data distribution is stationary",
+      "Each output label is conditionally independent of inputs",
+      "Training data is representative of the population"
+    ],
+    "answer": "Each output label is conditionally independent of inputs",
+    "explanation": "Supervised learning assumes outputs depend on inputs; conditional independence violates this."
+  },
+  {
+    "question": "Why is it important for an ML model to generalize?",
+    "options": [
+      "To achieve low training error",
+      "To perform well on unseen data",
+      "To reduce model complexity",
+      "To simplify the optimization process"
+    ],
+    "answer": "To perform well on unseen data",
+    "explanation": "Generalization ensures the model's usefulness beyond the training data."
+  },
+  {
+    "question": "Which of the following scenarios exemplifies the bias-variance tradeoff?",
+    "options": [
+      "Switching from a decision tree to k-NN",
+      "Tuning the degree of a polynomial regression model",
+      "Changing the learning rate in gradient descent",
+      "Switching from supervised to unsupervised learning"
+    ],
+    "answer": "Tuning the degree of a polynomial regression model",
+    "explanation": "Changing model complexity directly affects bias and variance."
+  },
+  {
+    "question": "What is one key reason gradient descent may not find the global minimum in training?",
+    "options": [
+      "The loss function is convex",
+      "The learning rate is constant",
+      "The presence of local minima in non-convex functions",
+      "Too much regularization"
+    ],
+    "answer": "The presence of local minima in non-convex functions",
+    "explanation": "Non-convex landscapes can trap gradient descent in local minima or saddle points."
+  },
+  {
+    "question": "Which of the following best illustrates overfitting in a high-dimensional space?",
+    "options": [
+      "Model perfectly classifies training data but fails on test data",
+      "Model fails to reach convergence on training data",
+      "Model has equally poor training and test performance",
+      "Model only learns the noise in the test set"
+    ],
+    "answer": "Model perfectly classifies training data but fails on test data",
+    "explanation": "Overfitting means good performance on training but poor generalization."
+  },
+  {
+    "question": "What does the 'No Free Lunch' theorem imply in the context of ML models?",
+    "options": [
+      "No algorithm performs best for all possible problems",
+      "Training accuracy is always higher than test accuracy",
+      "Every model needs a large dataset",
+      "There is always a bias-variance tradeoff"
+    ],
+    "answer": "No algorithm performs best for all possible problems",
+    "explanation": "The theorem asserts that no single model outperforms others across all tasks."
+  },
+  {
+    "question": "Which of the following components is most directly responsible for defining the capacity of a model?",
+    "options": [
+      "Hypothesis space",
+      "Loss function",
+      "Optimization algorithm",
+      "Dataset size"
+    ],
+    "answer": "Hypothesis space",
+    "explanation": "The model's capacity is defined by the complexity of its hypothesis space."
+  },
+  {
+    "question": "Which of the following does NOT typically reduce overfitting?",
+    "options": [
+      "Adding more training data",
+      "Increasing model complexity",
+      "Applying regularization",
+      "Using cross-validation"
+    ],
+    "answer": "Increasing model complexity",
+    "explanation": "Complex models can memorize data, increasing the risk of overfitting."
+  },
+  {
+    "question": "Which method would help if your model shows high bias?",
+    "options": [
+      "Use a more flexible model",
+      "Reduce training data",
+      "Apply L2 regularization",
+      "Decrease the learning rate"
+    ],
+    "answer": "Use a more flexible model",
+    "explanation": "High bias often means the model is too simplistic to capture the patterns."
+  },
+  {
+    "question": "What does i.i.d. stand for in ML?",
+    "options": [
+      "Independent and identically distributed",
+      "Independent input-dependent",
+      "Integrated and incremental data",
+      "Instance-insensitive decision"
+    ],
+    "answer": "Independent and identically distributed",
+    "explanation": "i.i.d. is a core assumption in most statistical learning frameworks."
+  },
+  {
+    "question": "Which is the primary difference between supervised and unsupervised learning?",
+    "options": [
+      "Presence of labeled data in training",
+      "Amount of data used",
+      "Use of neural networks",
+      "Use of clustering algorithms"
+    ],
+    "answer": "Presence of labeled data in training",
+    "explanation": "Supervised learning relies on labeled data to guide model training."
+  },
+  {
+    "question": "What makes an algorithm 'lazy' in machine learning?",
+    "options": [
+      "It defers computation until prediction time",
+      "It performs redundant computations",
+      "It only works on labeled data",
+      "It uses deep networks with many parameters"
+    ],
+    "answer": "It defers computation until prediction time",
+    "explanation": "Lazy learners like k-NN wait until test time to process the data."
+  },
+  {
+    "question": "What is the primary goal of the loss function in training an ML model?",
+    "options": [
+      "Measure error to guide optimization",
+      "Generate random samples",
+      "Detect anomalies in data",
+      "Reduce model interpretability"
+    ],
+    "answer": "Measure error to guide optimization",
+    "explanation": "Loss functions quantify how far predictions are from true values, guiding learning."
+  },
+  {
+    "question": "Which of the following is a valid reason to use cross-validation?",
+    "options": [
+      "Estimate generalization performance",
+      "Reduce model complexity",
+      "Optimize learning rate",
+      "Prevent data leakage"
+    ],
+    "answer": "Estimate generalization performance",
+    "explanation": "Cross-validation assesses model performance on unseen splits of the data."
+  }
+]

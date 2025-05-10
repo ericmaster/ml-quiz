@@ -1,0 +1,222 @@
+[
+    {
+        "question": "What is the primary purpose of regularization in machine learning models?",
+        "options": [
+            "Increase training accuracy",
+            "Reduce bias",
+            "Prevent overfitting by penalizing model complexity",
+            "Accelerate convergence of gradient descent"
+        ],
+        "answer": "Prevent overfitting by penalizing model complexity",
+        "explanation": "Regularization adds a penalty to the loss function to discourage overly complex models, thereby preventing overfitting."
+    },
+    {
+        "question": "Which regularization technique adds the absolute value of coefficients to the loss function?",
+        "options": [
+            "Ridge regression",
+            "Dropout",
+            "Lasso regression",
+            "Early stopping"
+        ],
+        "answer": "Lasso regression",
+        "explanation": "Lasso (L1) regularization adds the absolute value of the coefficients, encouraging sparsity in the model."
+    },
+    {
+        "question": "What is the effect of setting a very large regularization parameter in ridge regression?",
+        "options": [
+            "Model underfits the data",
+            "Model overfits the data",
+            "Model becomes non-linear",
+            "Training time increases"
+        ],
+        "answer": "Model underfits the data",
+        "explanation": "A large regularization term heavily penalizes large weights, leading to underfitting."
+    },
+    {
+        "question": "Which regularization method can perform variable selection by shrinking some coefficients to zero?",
+        "options": [
+            "L2 regularization",
+            "Early stopping",
+            "L1 regularization",
+            "Weight decay"
+        ],
+        "answer": "L1 regularization",
+        "explanation": "L1 regularization can produce sparse models by shrinking some coefficients exactly to zero."
+    },
+    {
+        "question": "What is the geometrical interpretation of L1 regularization?",
+        "options": [
+            "It favors solutions inside a circle",
+            "It favors solutions inside a diamond",
+            "It minimizes Euclidean distance",
+            "It maximizes margin"
+        ],
+        "answer": "It favors solutions inside a diamond",
+        "explanation": "The L1 norm creates a diamond-shaped constraint region, promoting sparsity in solutions."
+    },
+    {
+        "question": "Why does L2 regularization generally not lead to sparse models?",
+        "options": [
+            "It penalizes large weights less than L1",
+            "Its constraint set is circular, discouraging zeros",
+            "It uses gradient descent",
+            "It doesn't shrink weights"
+        ],
+        "answer": "Its constraint set is circular, discouraging zeros",
+        "explanation": "The circular constraint of L2 regularization doesn't encourage zero coefficients like L1 does."
+    },
+    {
+        "question": "What happens to the bias and variance when regularization strength increases?",
+        "options": [
+            "Bias increases, variance increases",
+            "Bias increases, variance decreases",
+            "Bias decreases, variance increases",
+            "Bias and variance both decrease"
+        ],
+        "answer": "Bias increases, variance decreases",
+        "explanation": "Stronger regularization simplifies the model (reducing variance) but may introduce more bias."
+    },
+    {
+        "question": "Which of the following can be interpreted as a Bayesian prior on model weights?",
+        "options": [
+            "L2 regularization as Gaussian prior",
+            "L1 regularization as Gaussian prior",
+            "Dropout as Laplace prior",
+            "Weight decay as uniform prior"
+        ],
+        "answer": "L2 regularization as Gaussian prior",
+        "explanation": "L2 regularization corresponds to placing a zero-mean Gaussian prior on the weights."
+    },
+    {
+        "question": "What is 'elastic net' regularization?",
+        "options": [
+            "A method combining dropout and weight decay",
+            "A variant of early stopping",
+            "A combination of L1 and L2 regularization",
+            "A form of regularized cross-validation"
+        ],
+        "answer": "A combination of L1 and L2 regularization",
+        "explanation": "Elastic Net linearly combines L1 and L2 penalties, balancing sparsity and shrinkage."
+    },
+    {
+        "question": "Which model typically benefits most from regularization?",
+        "options": [
+            "Linear models on small data",
+            "Simple models with few parameters",
+            "Overparameterized models",
+            "Models with low training error"
+        ],
+        "answer": "Overparameterized models",
+        "explanation": "Regularization is especially helpful when models have more parameters than data points."
+    },
+    {
+        "question": "What is a downside of excessive regularization?",
+        "options": [
+            "High variance",
+            "Increased training error",
+            "Increased overfitting",
+            "Model instability"
+        ],
+        "answer": "Increased training error",
+        "explanation": "Too much regularization can overly constrain the model, increasing training error and bias."
+    },
+    {
+        "question": "Which of the following is a form of implicit regularization?",
+        "options": [
+            "Lasso",
+            "Weight decay",
+            "Early stopping",
+            "Ridge"
+        ],
+        "answer": "Early stopping",
+        "explanation": "Early stopping limits the number of training iterations, acting as a form of implicit regularization."
+    },
+    {
+        "question": "Why does L1 regularization lead to sparse solutions?",
+        "options": [
+            "Its gradient is smooth",
+            "It encourages group selection",
+            "It has sharp corners in its constraint space",
+            "It uses dropout"
+        ],
+        "answer": "It has sharp corners in its constraint space",
+        "explanation": "The geometry of L1 regularization favors solutions that lie on axes, leading to zeros in coefficients."
+    },
+    {
+        "question": "Which term is added to the loss function in L2 regularization?",
+        "options": [
+            "Sum of absolute weights",
+            "Sum of squared weights",
+            "Sum of weight magnitudes",
+            "Sum of product of weights and inputs"
+        ],
+        "answer": "Sum of squared weights",
+        "explanation": "L2 regularization adds the squared weights to the loss, penalizing large coefficients."
+    },
+    {
+        "question": "What type of norm does L1 regularization use?",
+        "options": [
+            "Euclidean norm",
+            "Manhattan norm",
+            "Frobenius norm",
+            "Infinity norm"
+        ],
+        "answer": "Manhattan norm",
+        "explanation": "L1 regularization corresponds to the Manhattan (L1) norm of the coefficient vector."
+    },
+    {
+        "question": "In practice, how is the regularization parameter typically chosen?",
+        "options": [
+            "Manually based on experience",
+            "Optimized using training loss",
+            "Via cross-validation",
+            "From the test set"
+        ],
+        "answer": "Via cross-validation",
+        "explanation": "The regularization strength is often chosen using cross-validation to optimize generalization performance."
+    },
+    {
+        "question": "Which statement best describes weight decay in neural networks?",
+        "options": [
+            "A form of learning rate adjustment",
+            "A method for pruning neurons",
+            "An L2 regularization applied during weight updates",
+            "A method for dropout masking"
+        ],
+        "answer": "An L2 regularization applied during weight updates",
+        "explanation": "Weight decay reduces weights during training, effectively implementing L2 regularization."
+    },
+    {
+        "question": "Which regularization approach is most suitable for automatic feature selection?",
+        "options": [
+            "Ridge",
+            "Lasso",
+            "Dropout",
+            "Early stopping"
+        ],
+        "answer": "Lasso",
+        "explanation": "Lasso promotes sparsity, setting some weights to zero, which aids in feature selection."
+    },
+    {
+        "question": "Which effect does dropout have on neural network training?",
+        "options": [
+            "Reduces model size",
+            "Increases training speed",
+            "Acts as stochastic regularization",
+            "Decreases batch size"
+        ],
+        "answer": "Acts as stochastic regularization",
+        "explanation": "Dropout randomly deactivates neurons during training, helping prevent co-adaptation and overfitting."
+    },
+    {
+        "question": "Which method can combine benefits of both L1 and L2 regularization?",
+        "options": [
+            "Early stopping",
+            "Elastic net",
+            "Ridge",
+            "Dropout"
+        ],
+        "answer": "Elastic net",
+        "explanation": "Elastic net merges L1’s sparsity and L2’s shrinkage properties for better generalization."
+    }
+]

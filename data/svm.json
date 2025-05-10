@@ -1,0 +1,223 @@
+[
+    {
+      "question": "What is the main goal of a Support Vector Machine (SVM)?",
+      "options": [
+        "To minimize classification accuracy",
+        "To maximize the margin between classes",
+        "To reduce the number of features",
+        "To increase the number of support vectors"
+      ],
+      "answer": "To maximize the margin between classes",
+      "explanation": "SVM aims to find the hyperplane that maximizes the margin between support vectors of different classes."
+    },
+    {
+      "question": "Which of the following best describes a support vector?",
+      "options": [
+        "Any point in the dataset",
+        "A data point far from the decision boundary",
+        "A data point that lies closest to the decision boundary",
+        "A centroid of a cluster"
+      ],
+      "answer": "A data point that lies closest to the decision boundary",
+      "explanation": "Support vectors are the data points closest to the decision boundary and are critical in defining it."
+    },
+    {
+      "question": "What role does the kernel function play in SVM?",
+      "options": [
+        "It increases the margin",
+        "It removes noisy data",
+        "It transforms data into a higher-dimensional space",
+        "It normalizes the data"
+      ],
+      "answer": "It transforms data into a higher-dimensional space",
+      "explanation": "Kernel functions implicitly map inputs into higher-dimensional spaces to make data linearly separable."
+    },
+    {
+      "question": "Which of the following kernels is **not** valid for use in SVM?",
+      "options": [
+        "Polynomial",
+        "RBF (Gaussian)",
+        "Sigmoid",
+        "Exponential linear"
+      ],
+      "answer": "Exponential linear",
+      "explanation": "Exponential linear is not a common or valid kernel under Mercer’s theorem, unlike the others."
+    },
+    {
+      "question": "What does the parameter C control in SVM?",
+      "options": [
+        "The number of support vectors",
+        "The width of the margin",
+        "The trade-off between margin maximization and misclassification",
+        "The dimensionality of the kernel space"
+      ],
+      "answer": "The trade-off between margin maximization and misclassification",
+      "explanation": "C controls the penalty for misclassification, balancing margin size and classification error."
+    },
+    {
+      "question": "What is the effect of a very large C in an SVM model?",
+      "options": [
+        "It promotes a large margin",
+        "It allows more margin violations",
+        "It heavily penalizes misclassifications",
+        "It results in underfitting"
+      ],
+      "answer": "It heavily penalizes misclassifications",
+      "explanation": "A large C forces the model to classify training data more accurately, possibly overfitting."
+    },
+    {
+      "question": "What is the geometric interpretation of the margin in SVM?",
+      "options": [
+        "The area under the curve",
+        "The distance between hyperplane and the nearest support vector",
+        "The dot product of support vectors",
+        "The volume of the convex hull"
+      ],
+      "answer": "The distance between hyperplane and the nearest support vector",
+      "explanation": "Margin is defined as the perpendicular distance from the decision boundary to the closest points (support vectors)."
+    },
+    {
+      "question": "Which optimization technique is commonly used to solve the SVM objective?",
+      "options": [
+        "Gradient Descent",
+        "Newton-Raphson",
+        "Quadratic Programming",
+        "Stochastic Sampling"
+      ],
+      "answer": "Quadratic Programming",
+      "explanation": "SVM formulation leads to a convex quadratic programming problem with linear constraints."
+    },
+    {
+      "question": "In SVM, the dual problem formulation is preferred because:",
+      "options": [
+        "It reduces computation for low-dimensional data",
+        "It avoids kernel usage",
+        "It allows the use of kernel trick",
+        "It increases sparsity of the solution"
+      ],
+      "answer": "It allows the use of kernel trick",
+      "explanation": "The dual form involves only dot products, allowing kernel substitution without explicit transformation."
+    },
+    {
+      "question": "What does the Karush-Kuhn-Tucker (KKT) condition signify in SVM?",
+      "options": [
+        "Support vector redundancy",
+        "Convergence to local minimum",
+        "Optimality of the solution",
+        "Ill-conditioned optimization"
+      ],
+      "answer": "Optimality of the solution",
+      "explanation": "KKT conditions are necessary and sufficient for optimality in convex problems like SVM."
+    },
+    {
+      "question": "Which class of problems is SVM best suited for?",
+      "options": [
+        "Highly noisy and overlapping classes",
+        "Low-dimensional and linearly separable classes",
+        "Unsupervised clustering",
+        "Sequential prediction problems"
+      ],
+      "answer": "Low-dimensional and linearly separable classes",
+      "explanation": "SVMs excel in clean, linearly separable spaces but can be adapted to complex ones with kernels."
+    },
+    {
+      "question": "What is the dimensionality of the transformed feature space in an RBF kernel SVM?",
+      "options": [
+        "Same as input",
+        "Finite and large",
+        "Infinite",
+        "Zero"
+      ],
+      "answer": "Infinite",
+      "explanation": "The RBF kernel implicitly maps data into an infinite-dimensional space."
+    },
+    {
+      "question": "In a soft-margin SVM, slack variables measure:",
+      "options": [
+        "Overfitting level",
+        "Classification error margin",
+        "The deviation from margin boundaries",
+        "Number of support vectors"
+      ],
+      "answer": "The deviation from margin boundaries",
+      "explanation": "Slack variables quantify how much a sample violates the margin constraint."
+    },
+    {
+      "question": "What does the weight vector w represent in SVM?",
+      "options": [
+        "The decision boundary slope",
+        "The normal vector to the hyperplane",
+        "The set of support vectors",
+        "The kernel function parameters"
+      ],
+      "answer": "The normal vector to the hyperplane",
+      "explanation": "The vector w defines the orientation of the separating hyperplane."
+    },
+    {
+      "question": "What is the impact of using a linear kernel with non-linear data?",
+      "options": [
+        "Perfect separation",
+        "Poor generalization",
+        "Kernel trick is invoked automatically",
+        "Regularization is ignored"
+      ],
+      "answer": "Poor generalization",
+      "explanation": "Linear kernels cannot capture non-linear patterns, resulting in poor performance."
+    },
+    {
+      "question": "What does the dual variable α_i signify in the SVM dual problem?",
+      "options": [
+        "The weight of the i-th support vector",
+        "The classification margin",
+        "The learning rate",
+        "The variance of the i-th feature"
+      ],
+      "answer": "The weight of the i-th support vector",
+      "explanation": "Only non-zero α_i contribute to the decision function, effectively weighting the support vectors."
+    },
+    {
+      "question": "How does increasing the degree of a polynomial kernel affect the model?",
+      "options": [
+        "Reduces overfitting",
+        "Increases model flexibility",
+        "Decreases training time",
+        "Lowers dimensionality"
+      ],
+      "answer": "Increases model flexibility",
+      "explanation": "Higher-degree polynomials allow the model to capture more complex patterns, risking overfitting."
+    },
+    {
+      "question": "How does SVM handle multi-class classification problems by default?",
+      "options": [
+        "Direct multiclass optimization",
+        "One-vs-One or One-vs-All decomposition",
+        "Using softmax layers",
+        "Decision tree decomposition"
+      ],
+      "answer": "One-vs-One or One-vs-All decomposition",
+      "explanation": "SVM is inherently binary; multiclass classification uses decomposition strategies like One-vs-All."
+    },
+    {
+      "question": "What happens if we remove all support vectors after training?",
+      "options": [
+        "Model size reduces with no effect",
+        "Prediction fails as support vectors are required",
+        "Margin increases",
+        "Training accuracy increases"
+      ],
+      "answer": "Prediction fails as support vectors are required",
+      "explanation": "Support vectors are critical for computing the decision function post-training."
+    },
+    {
+      "question": "Why is SVM considered a maximum margin classifier?",
+      "options": [
+        "It minimizes within-class distance",
+        "It uses hard thresholds",
+        "It explicitly maximizes the separation between classes",
+        "It minimizes loss over epochs"
+      ],
+      "answer": "It explicitly maximizes the separation between classes",
+      "explanation": "SVM maximizes the distance between the closest points (support vectors) of each class."
+    }
+  ]
+  

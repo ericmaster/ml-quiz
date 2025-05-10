@@ -1,0 +1,222 @@
+[
+    {
+        "question": "What is the key assumption behind transfer learning?",
+        "options": [
+            "Source and target tasks are unrelated",
+            "Source and target tasks share knowledge",
+            "Target data must be labeled",
+            "Models must be trained from scratch"
+        ],
+        "answer": "Source and target tasks share knowledge",
+        "explanation": "Transfer learning assumes some transferable features or knowledge between tasks."
+    },
+    {
+        "question": "Which layer of a pretrained network is most commonly fine-tuned for a new task?",
+        "options": [
+            "Input layer",
+            "Early convolutional layers",
+            "Final fully connected layers",
+            "Dropout layer"
+        ],
+        "answer": "Final fully connected layers",
+        "explanation": "Final layers are task-specific and often need adaptation for new tasks."
+    },
+    {
+        "question": "Which approach is least likely to benefit from transfer learning?",
+        "options": [
+            "Image classification with similar datasets",
+            "Sentiment analysis on a new domain",
+            "Training from scratch on a large dataset",
+            "Object detection using pretrained backbones"
+        ],
+        "answer": "Training from scratch on a large dataset",
+        "explanation": "Transfer learning is more useful when labeled data is limited, not when training from scratch on large data."
+    },
+    {
+        "question": "What does 'domain adaptation' in transfer learning focus on?",
+        "options": [
+            "Adjusting labels in source domain",
+            "Aligning feature distributions between domains",
+            "Reducing model size",
+            "Increasing model depth"
+        ],
+        "answer": "Aligning feature distributions between domains",
+        "explanation": "Domain adaptation techniques reduce domain shift between source and target feature spaces."
+    },
+    {
+        "question": "What kind of problem does 'catastrophic forgetting' refer to in transfer learning?",
+        "options": [
+            "Model overfitting",
+            "Loss of performance on the original task",
+            "Unbalanced classes in target task",
+            "Gradient vanishing in deep models"
+        ],
+        "answer": "Loss of performance on the original task",
+        "explanation": "Fine-tuning can degrade performance on the source task due to overwriting learned weights."
+    },
+    {
+        "question": "Which metric is most relevant to measure negative transfer?",
+        "options": [
+            "Validation loss on source task",
+            "Accuracy improvement on the target task",
+            "Drop in target task performance after transfer",
+            "Size of the pretrained model"
+        ],
+        "answer": "Drop in target task performance after transfer",
+        "explanation": "Negative transfer occurs when transferred knowledge harms target task performance."
+    },
+    {
+        "question": "Which setting does not fall under transfer learning?",
+        "options": [
+            "Few-shot learning using a pretrained model",
+            "Pretraining on ImageNet and finetuning on CIFAR-10",
+            "Training a language model from scratch",
+            "Adapting a speech recognition model to a new accent"
+        ],
+        "answer": "Training a language model from scratch",
+        "explanation": "Transfer learning reuses prior knowledge; training from scratch does not leverage any."
+    },
+    {
+        "question": "What role does freezing layers play in transfer learning?",
+        "options": [
+            "Reduces overfitting on the source task",
+            "Prevents weights from being updated during training",
+            "Accelerates training by removing forward passes",
+            "Improves learning rate convergence"
+        ],
+        "answer": "Prevents weights from being updated during training",
+        "explanation": "Freezing layers keeps their weights constant to preserve learned features."
+    },
+    {
+        "question": "Which condition increases the risk of negative transfer?",
+        "options": [
+            "Similar source and target tasks",
+            "Large unlabeled target dataset",
+            "High domain divergence",
+            "Use of pretrained embeddings"
+        ],
+        "answer": "High domain divergence",
+        "explanation": "High domain divergence reduces feature transferability, increasing the risk of negative transfer."
+    },
+    {
+        "question": "What type of learning best describes pretraining a model on a large corpus and fine-tuning it on a downstream task?",
+        "options": [
+            "Unsupervised learning",
+            "Multi-task learning",
+            "Transfer learning",
+            "Reinforcement learning"
+        ],
+        "answer": "Transfer learning",
+        "explanation": "This is a classic example of transfer learning with task adaptation."
+    },
+    {
+        "question": "Which is a common strategy in transfer learning for NLP tasks?",
+        "options": [
+            "Random weight initialization",
+            "Replacing ReLU with sigmoid",
+            "Using pretrained word embeddings",
+            "Reducing vocabulary size"
+        ],
+        "answer": "Using pretrained word embeddings",
+        "explanation": "Word embeddings like Word2Vec or GloVe encode useful prior knowledge for NLP models."
+    },
+    {
+        "question": "What is a typical sign that transfer learning was successful?",
+        "options": [
+            "Model parameters increase significantly",
+            "Training time is longer",
+            "Target task performance improves with less data",
+            "Source task performance improves"
+        ],
+        "answer": "Target task performance improves with less data",
+        "explanation": "Efficient transfer leads to improved performance on the target task using fewer resources."
+    },
+    {
+        "question": "Which is NOT a goal of transfer learning?",
+        "options": [
+            "Reduce training data needs",
+            "Improve generalization",
+            "Train models faster",
+            "Maximize model size"
+        ],
+        "answer": "Maximize model size",
+        "explanation": "Transfer learning typically emphasizes efficiency, not increasing model size."
+    },
+    {
+        "question": "In fine-tuning, what is the usual setting for the learning rate of the pretrained layers?",
+        "options": [
+            "Zero",
+            "Higher than randomly initialized layers",
+            "Same as all layers",
+            "Lower than newly added layers"
+        ],
+        "answer": "Lower than newly added layers",
+        "explanation": "Smaller learning rates help preserve knowledge in pretrained layers while adapting slowly."
+    },
+    {
+        "question": "Which technique helps in aligning source and target domains in domain adaptation?",
+        "options": [
+            "Dropout regularization",
+            "Adversarial training",
+            "ReLU activations",
+            "Batch normalization"
+        ],
+        "answer": "Adversarial training",
+        "explanation": "Adversarial domain adaptation tries to make features domain-invariant using a domain discriminator."
+    },
+    {
+        "question": "Which of the following is TRUE for zero-shot transfer?",
+        "options": [
+            "Target labels are seen during source training",
+            "Target task data must be labeled",
+            "Model generalizes to tasks without fine-tuning",
+            "Source and target domains are identical"
+        ],
+        "answer": "Model generalizes to tasks without fine-tuning",
+        "explanation": "Zero-shot learning enables application to unseen tasks or classes without retraining."
+    },
+    {
+        "question": "What is typically required in few-shot transfer learning?",
+        "options": [
+            "A large labeled target dataset",
+            "Pretrained source model",
+            "High domain divergence",
+            "Training from scratch"
+        ],
+        "answer": "Pretrained source model",
+        "explanation": "Few-shot methods rely on prior knowledge encoded in pretrained models to generalize with limited data."
+    },
+    {
+        "question": "Which scenario is an example of inductive transfer learning?",
+        "options": [
+            "Unsupervised pretraining and supervised fine-tuning",
+            "Training on the same task with new data",
+            "Learning from reward signals",
+            "Translating across unrelated languages"
+        ],
+        "answer": "Unsupervised pretraining and supervised fine-tuning",
+        "explanation": "Inductive transfer assumes labeled data is available in the target domain with potentially different tasks."
+    },
+    {
+        "question": "Why is early stopping useful in transfer learning?",
+        "options": [
+            "To increase model complexity",
+            "To avoid overfitting on small target data",
+            "To stabilize source task performance",
+            "To reduce batch size"
+        ],
+        "answer": "To avoid overfitting on small target data",
+        "explanation": "Early stopping halts training before the model overfits the limited target dataset."
+    },
+    {
+        "question": "What makes transfer learning especially valuable in medical imaging tasks?",
+        "options": [
+            "Availability of large target datasets",
+            "Uniform image sizes",
+            "Scarcity of labeled data",
+            "Use of grayscale images"
+        ],
+        "answer": "Scarcity of labeled data",
+        "explanation": "Labeling medical data is costly, so pretrained models help learn efficiently from fewer labels."
+    }
+]

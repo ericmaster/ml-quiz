@@ -1,0 +1,223 @@
+[
+    {
+      "question": "What is the primary assumption behind the k-Nearest Neighbors (kNN) algorithm?",
+      "options": [
+        "Data is linearly separable",
+        "Instances that are near each other are likely to have the same class",
+        "There exists a decision boundary",
+        "Data follows a Gaussian distribution"
+      ],
+      "answer": "Instances that are near each other are likely to have the same class",
+      "explanation": "kNN assumes that nearby points have similar labels, leveraging local proximity."
+    },
+    {
+      "question": "Which of the following distance metrics would be most appropriate for binary attributes?",
+      "options": [
+        "Euclidean distance",
+        "Manhattan distance",
+        "Hamming distance",
+        "Cosine similarity"
+      ],
+      "answer": "Hamming distance",
+      "explanation": "Hamming distance is well-suited for binary (categorical) variables."
+    },
+    {
+      "question": "What is the effect of increasing the value of k in kNN?",
+      "options": [
+        "Model becomes more sensitive to noise",
+        "Model complexity increases",
+        "Decision boundary becomes smoother",
+        "Variance increases"
+      ],
+      "answer": "Decision boundary becomes smoother",
+      "explanation": "Larger k averages over more neighbors, reducing model variance and smoothing the decision boundary."
+    },
+    {
+      "question": "Which of the following best describes the time complexity of classifying a new instance in kNN?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(k)"
+      ],
+      "answer": "O(n)",
+      "explanation": "To classify, the algorithm must compute distances to all n training instances."
+    },
+    {
+      "question": "What is a major drawback of the kNN algorithm?",
+      "options": [
+        "It cannot handle multi-class problems",
+        "It assumes feature independence",
+        "It has a high inference time",
+        "It requires model training"
+      ],
+      "answer": "It has a high inference time",
+      "explanation": "kNN stores the entire dataset and does most computation during inference."
+    },
+    {
+      "question": "Which of the following techniques can improve kNN efficiency?",
+      "options": [
+        "Batch gradient descent",
+        "KD-trees or Ball trees",
+        "Regularization",
+        "Ensemble averaging"
+      ],
+      "answer": "KD-trees or Ball trees",
+      "explanation": "Spatial partitioning structures like KD-trees reduce distance computations."
+    },
+    {
+      "question": "In high-dimensional spaces, kNN tends to perform poorly due to:",
+      "options": [
+        "Overfitting",
+        "Curse of dimensionality",
+        "Low variance",
+        "Underfitting"
+      ],
+      "answer": "Curse of dimensionality",
+      "explanation": "In high dimensions, distances become less meaningful and all points appear similar."
+    },
+    {
+      "question": "How does feature scaling affect kNN performance?",
+      "options": [
+        "It has no effect",
+        "It improves training time",
+        "It ensures distance metrics are not biased",
+        "It reduces model complexity"
+      ],
+      "answer": "It ensures distance metrics are not biased",
+      "explanation": "Unscaled features can dominate distance calculations and skew results."
+    },
+    {
+      "question": "Which choice of k is likely to result in overfitting?",
+      "options": [
+        "k = 1",
+        "k = sqrt(n)",
+        "k = n/2",
+        "k = log(n)"
+      ],
+      "answer": "k = 1",
+      "explanation": "With k = 1, the model is highly sensitive to noise, leading to overfitting."
+    },
+    {
+      "question": "How can class imbalance affect the kNN algorithm?",
+      "options": [
+        "It leads to early stopping",
+        "It improves generalization",
+        "Majority class dominates prediction",
+        "It eliminates outliers"
+      ],
+      "answer": "Majority class dominates prediction",
+      "explanation": "If the majority class is prevalent in neighbors, it can bias classification results."
+    },
+    {
+      "question": "Which weighting scheme can help improve kNN performance?",
+      "options": [
+        "Use uniform weights for all neighbors",
+        "Weight all features equally",
+        "Use weights inversely proportional to distance",
+        "Use the kernel trick"
+      ],
+      "answer": "Use weights inversely proportional to distance",
+      "explanation": "Closer neighbors are given higher influence by weighting them inversely with distance."
+    },
+    {
+      "question": "Which of the following is NOT a valid distance metric for kNN?",
+      "options": [
+        "Euclidean distance",
+        "Mahalanobis distance",
+        "Jaccard distance",
+        "Backpropagation distance"
+      ],
+      "answer": "Backpropagation distance",
+      "explanation": "Backpropagation is an optimization method, not a distance metric."
+    },
+    {
+      "question": "Why might cosine similarity be preferable to Euclidean distance in some kNN applications?",
+      "options": [
+        "It penalizes outliers more",
+        "It handles negative values better",
+        "It ignores vector magnitude and focuses on direction",
+        "It increases computation time"
+      ],
+      "answer": "It ignores vector magnitude and focuses on direction",
+      "explanation": "Cosine similarity measures angle between vectors, useful in text or sparse data."
+    },
+    {
+      "question": "How can one mitigate the curse of dimensionality in kNN?",
+      "options": [
+        "Use a smaller k",
+        "Remove class labels",
+        "Apply dimensionality reduction",
+        "Use sigmoid activation"
+      ],
+      "answer": "Apply dimensionality reduction",
+      "explanation": "Techniques like PCA reduce irrelevant dimensions and improve distance-based learning."
+    },
+    {
+      "question": "What does the decision boundary of a 1-NN classifier look like?",
+      "options": [
+        "Smooth curve",
+        "Linear line",
+        "Highly jagged and irregular",
+        "Circular"
+      ],
+      "answer": "Highly jagged and irregular",
+      "explanation": "1-NN memorizes training data, producing a complex decision surface."
+    },
+    {
+      "question": "In kNN, which k value gives the most stable but least flexible model?",
+      "options": [
+        "k = 1",
+        "k = n",
+        "k = log(n)",
+        "k = sqrt(n)"
+      ],
+      "answer": "k = n",
+      "explanation": "When k = n, the model always predicts the majority class, ignoring local structure."
+    },
+    {
+      "question": "What is the primary difference between kNN and parametric models?",
+      "options": [
+        "kNN requires backpropagation",
+        "kNN stores the model weights",
+        "kNN makes no assumptions about data distribution",
+        "kNN trains a neural network"
+      ],
+      "answer": "kNN makes no assumptions about data distribution",
+      "explanation": "kNN is a non-parametric method and relies purely on training data for predictions."
+    },
+    {
+      "question": "Which of the following can improve kNN accuracy?",
+      "options": [
+        "Dropout regularization",
+        "Normalization of features",
+        "Reducing number of neighbors",
+        "Removing support vectors"
+      ],
+      "answer": "Normalization of features",
+      "explanation": "Normalizing ensures fair contribution of each feature to distance calculations."
+    },
+    {
+      "question": "When using kNN for regression, what is the predicted output?",
+      "options": [
+        "Majority class of neighbors",
+        "Weighted sum of distances",
+        "Average of neighbor outputs",
+        "Median of all outputs"
+      ],
+      "answer": "Average of neighbor outputs",
+      "explanation": "In regression, kNN returns the mean of the k closest neighbors’ output values."
+    },
+    {
+      "question": "What is the impact of outliers on kNN?",
+      "options": [
+        "They improve margin",
+        "They have minimal effect",
+        "They can mislead predictions due to proximity",
+        "They are always ignored"
+      ],
+      "answer": "They can mislead predictions due to proximity",
+      "explanation": "Outliers, if close to a query point, can skew kNN predictions."
+    }
+  ]
+  

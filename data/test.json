@@ -1,0 +1,497 @@
+[
+  {
+    "question": "¿Cuál es una ventaja principal de la función ReLU en redes neuronales profundas?",
+    "options": [
+      "Evita el problema de gradientes que desaparecen en entradas positivas",
+      "Reduce la dimensionalidad de los datos de entrada",
+      "Asegura una salida constante independientemente de la entrada",
+      "Siempre produce una activación negativa"
+    ],
+    "answer": "Evita el problema de gradientes que desaparecen en entradas positivas",
+    "explanation": "La función ReLU tiene una derivada constante para entradas positivas, lo cual evita el problema de gradientes que desaparecen, facilitando el entrenamiento de redes profundas."
+  },
+  {
+    "question": "¿Cuál de las siguientes técnicas no es adecuada para abordar un problema de alto sesgo en un modelo de regresión lineal regularizada?",
+    "options": [
+      "Reducir el valor del parámetro de regularización λ",
+      "Agregar características polinómicas",
+      "Obtener más ejemplos de entrenamiento",
+      "Aumentar el tamaño del conjunto de entrenamiento"
+    ],
+    "answer": "Aumentar el tamaño del conjunto de entrenamiento",
+    "explanation": "En casos de alto sesgo, agregar más datos no suele mejorar significativamente el rendimiento. Es más efectivo aumentar la complejidad del modelo o reducir la regularización."
+  },
+  {
+    "question": "¿Qué efecto tiene la regularización L1 (Lasso) en un modelo de regresión?",
+    "options": [
+      "Tiende a hacer cero algunos parámetros, produciendo modelos dispersos",
+      "Reduce la varianza sin afectar el sesgo",
+      "Distribuye uniformemente los valores de todos los parámetros",
+      "No modifica los parámetros, solo el error de entrenamiento"
+    ],
+    "answer": "Tiende a hacer cero algunos parámetros, produciendo modelos dispersos",
+    "explanation": "La regularización L1 promueve la dispersión, forzando algunos coeficientes a ser exactamente cero, lo que puede llevar a modelos más interpretables."
+  },
+  {
+    "question": "¿Cuál es una desventaja principal del uso de funciones de activación sigmoide en redes neuronales profundas?",
+    "options": [
+      "Pueden causar el problema de gradientes que desaparecen",
+      "No son diferenciables",
+      "Requieren datos con distribución normal",
+      "Solo funcionan con datos binarios"
+    ],
+    "answer": "Pueden causar el problema de gradientes que desaparecen",
+    "explanation": "Las funciones sigmoides tienden a aplanarse en los extremos, lo que puede hacer que las derivadas se vuelvan muy pequeñas y dificulten la propagación del error durante el entrenamiento."
+  },
+  {
+    "question": "¿Qué estrategia es más efectiva para reducir la varianza de un modelo?",
+    "options": [
+      "Obtener más ejemplos de entrenamiento",
+      "Reducir el grado del polinomio",
+      "Eliminar regularización",
+      "Usar una función de costo diferente"
+    ],
+    "answer": "Obtener más ejemplos de entrenamiento",
+    "explanation": "La varianza alta suele deberse a un sobreajuste del modelo a los datos de entrenamiento, y más datos pueden ayudar a que el modelo generalice mejor."
+  },
+  {
+    "question": "¿Qué diferencia principal hay entre L1 y L2 en regularización?",
+    "options": [
+      "L1 puede producir coeficientes exactamente cero, L2 no",
+      "L2 siempre reduce más el error",
+      "L1 requiere datos normalizados, L2 no",
+      "L1 solo funciona con regresión logística"
+    ],
+    "answer": "L1 puede producir coeficientes exactamente cero, L2 no",
+    "explanation": "La regularización L1 tiende a generar modelos dispersos al forzar algunos coeficientes a cero, lo que la hace útil para selección de características."
+  },
+  {
+    "question": "¿Cuál es el objetivo principal de PCA?",
+    "options": [
+      "Reducir la dimensionalidad preservando la mayor varianza",
+      "Seleccionar las características más importantes",
+      "Maximizar la precisión de clasificación",
+      "Convertir variables categóricas en numéricas"
+    ],
+    "answer": "Reducir la dimensionalidad preservando la mayor varianza",
+    "explanation": "PCA proyecta los datos en un espacio de menor dimensión que conserva la mayor cantidad posible de variación de los datos originales."
+  },
+  {
+    "question": "¿Qué métrica es adecuada para evaluar la calidad de una regresión lineal?",
+    "options": [
+      "Error cuadrático medio (MSE)",
+      "Exactitud (accuracy)",
+      "F1-score",
+      "Entropía cruzada"
+    ],
+    "answer": "Error cuadrático medio (MSE)",
+    "explanation": "El MSE mide la media de los errores cuadrados entre los valores predichos y reales, lo que lo hace ideal para tareas de regresión."
+  },
+  {
+    "question": "¿Qué hace el truco del kernel en SVM?",
+    "options": [
+      "Permite calcular productos internos en espacios de mayor dimensión sin transformarlos explícitamente",
+      "Elimina outliers de los datos de entrenamiento",
+      "Reduce la necesidad de regularización",
+      "Convierte variables categóricas en numéricas"
+    ],
+    "answer": "Permite calcular productos internos en espacios de mayor dimensión sin transformarlos explícitamente",
+    "explanation": "El kernel trick permite usar funciones núcleo para calcular similitudes en espacios de alta dimensión sin hacer la transformación explícita."
+  },
+  {
+    "question": "¿Qué es una frontera de decisión en un clasificador binario?",
+    "options": [
+      "Una superficie que separa las clases predichas por el modelo",
+      "Un valor umbral de regularización",
+      "El número de ejemplos necesarios para generalizar",
+      "El punto donde se detiene el entrenamiento"
+    ],
+    "answer": "Una superficie que separa las clases predichas por el modelo",
+    "explanation": "La frontera de decisión es el límite en el espacio de características donde el clasificador cambia su predicción de una clase a otra."
+  },
+  {
+    "question": "¿Qué método de validación es más costoso computacionalmente pero produce estimaciones de error menos sesgadas?",
+    "options": [
+      "LOOCV (Leave-One-Out Cross-Validation)",
+      "Train/Test Split",
+      "Validación simple",
+      "Hold-out"
+    ],
+    "answer": "LOOCV (Leave-One-Out Cross-Validation)",
+    "explanation": "LOOCV utiliza un ejemplo para validar y el resto para entrenar, repitiendo esto para cada punto, lo cual es computacionalmente intensivo pero menos sesgado."
+  },
+  {
+    "question": "¿Qué afirmación es cierta sobre el aprendizaje no supervisado con k-means?",
+    "options": [
+      "K-means requiere que se especifique el número de clusters",
+      "K-means produce una clasificación binaria",
+      "K-means usa redes neuronales profundas",
+      "K-means selecciona automáticamente k usando validación cruzada"
+    ],
+    "answer": "K-means requiere que se especifique el número de clusters",
+    "explanation": "El algoritmo k-means necesita que el usuario defina previamente el número de agrupaciones (k) a encontrar en los datos."
+  },
+  {
+    "question": "¿Por qué se prefiere la activación softmax en la capa de salida de redes para clasificación multiclase?",
+    "options": [
+      "Porque produce un vector de probabilidades que suma 1",
+      "Porque evita el sobreajuste",
+      "Porque tiene derivada constante",
+      "Porque es más rápida de computar que ReLU"
+    ],
+    "answer": "Porque produce un vector de probabilidades que suma 1",
+    "explanation": "La función softmax convierte las salidas de la red en probabilidades normalizadas, adecuadas para clasificación multiclase."
+  },
+  {
+    "question": "Se entrena un modelo de regresión logística para detectar fraude financiero. ¿Cuál sería una acción problemática si el conjunto está altamente desbalanceado?",
+    "options": [
+      "Medir el rendimiento solo con la exactitud (accuracy)",
+      "Usar validación cruzada estratificada",
+      "Aplicar sobremuestreo en la clase minoritaria",
+      "Ajustar el umbral de decisión del modelo"
+    ],
+    "answer": "Medir el rendimiento solo con la exactitud (accuracy)",
+    "explanation": "En conjuntos desbalanceados, la exactitud puede ser engañosa; es posible obtener una alta exactitud simplemente prediciendo siempre la clase mayoritaria."
+  },
+  {
+    "question": "Una empresa entrena un modelo de k-NN sobre datos de clientes pero observa predicciones erráticas en una zona con pocos datos. ¿Qué podría mejorar el desempeño?",
+    "options": [
+      "Aumentar el número de vecinos (k)",
+      "Reducir k a 1",
+      "Normalizar la variable objetivo",
+      "Usar ReLU como función de activación"
+    ],
+    "answer": "Aumentar el número de vecinos (k)",
+    "explanation": "Cuando hay pocos datos en una zona, aumentar k ayuda a estabilizar la predicción considerando una región más amplia."
+  },
+  {
+    "question": "Un ingeniero utiliza PCA antes de entrenar un modelo de regresión, pero lo aplica también para reducir el número de características en el conjunto de test. ¿Cuál es el error potencial?",
+    "options": [
+      "Ajustar PCA sobre el test set en lugar del training set",
+      "Usar PCA con un número de componentes fijo",
+      "Normalizar los datos antes de PCA",
+      "Aplicar PCA tras la regularización"
+    ],
+    "answer": "Ajustar PCA sobre el test set en lugar del training set",
+    "explanation": "PCA debe ajustarse solo con el conjunto de entrenamiento y luego aplicarse al test. Ajustarlo sobre el test introduce fuga de información."
+  },
+  {
+    "question": "Un modelo SVM con kernel RBF tiene un valor de gamma muy alto. ¿Cuál es el síntoma probable?",
+    "options": [
+      "Sobreajuste (overfitting)",
+      "Subajuste (underfitting)",
+      "Reducción del margen",
+      "Problemas de multicolinealidad"
+    ],
+    "answer": "Sobreajuste (overfitting)",
+    "explanation": "Un gamma alto hace que el modelo se ajuste muy de cerca a los datos, lo cual lo hace sensible al ruido y propenso al sobreajuste."
+  },
+  {
+    "question": "Un analista aplica regularización L2 con λ = 0.000001 a un modelo complejo. ¿Cuál es el riesgo más probable?",
+    "options": [
+      "El modelo siga sobreajustando los datos",
+      "El modelo se vuelva completamente lineal",
+      "Todos los coeficientes se reduzcan a cero",
+      "No se pueda usar descenso de gradiente"
+    ],
+    "answer": "El modelo siga sobreajustando los datos",
+    "explanation": "Un valor muy bajo de λ implica una penalización débil, por lo tanto el modelo conserva su alta complejidad y puede seguir sobreajustando."
+  },
+  {
+    "question": "¿Cuál es una consecuencia directa de aplicar PCA antes de entrenar un modelo supervisado sin ajustar también el conjunto de prueba?",
+    "options": [
+      "El modelo generalizará incorrectamente debido a una transformación inconsistente de los datos",
+      "El modelo tendrá una mayor capacidad para detectar patrones no lineales",
+      "La precisión en el conjunto de prueba mejorará debido a una reducción en la dimensionalidad",
+      "El modelo entrenado tendrá una menor complejidad computacional en general"
+    ],
+    "answer": "El modelo generalizará incorrectamente debido a una transformación inconsistente de los datos",
+    "explanation": "PCA debe ser ajustado solo en el conjunto de entrenamiento; si se ajusta también en el test set, se introduce fuga de datos (data leakage), comprometiendo la generalización."
+  },
+  {
+    "question": "En un modelo SVM con kernel RBF, ¿cuál de los siguientes efectos produce un valor muy grande de γ (gamma)?",
+    "options": [
+      "Sobreajuste del modelo debido a márgenes muy estrechos alrededor de los puntos de soporte",
+      "Mayor capacidad para representar relaciones lineales en el espacio original",
+      "Subajuste del modelo al no captar patrones complejos en los datos",
+      "Disminución del tiempo de entrenamiento por menor complejidad del modelo"
+    ],
+    "answer": "Sobreajuste del modelo debido a márgenes muy estrechos alrededor de los puntos de soporte",
+    "explanation": "Un valor grande de γ hace que el kernel RBF tenga un efecto muy localizado, generando decisiones altamente sensibles a los puntos de entrenamiento y, por tanto, sobreajuste."
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones es verdadera respecto al uso de la regularización L1 (Lasso) frente a L2 (Ridge) en regresión lineal?",
+    "options": [
+      "L1 tiende a producir soluciones esparsas, eliminando completamente algunas características",
+      "L1 tiende a distribuir la penalización equitativamente entre todos los coeficientes",
+      "L2 promueve modelos más esparsos eliminando coeficientes irrelevantes",
+      "L1 y L2 producen resultados equivalentes cuando hay multicolinealidad entre características"
+    ],
+    "answer": "L1 tiende a producir soluciones esparsas, eliminando completamente algunas características",
+    "explanation": "La regularización L1 tiene la propiedad de llevar algunos coeficientes exactamente a cero, promoviendo la selección automática de características."
+  },
+  {
+    "question": "Durante la implementación del algoritmo k-means, ¿cuál es una fuente potencial de variabilidad que puede llevar a soluciones subóptimas?",
+    "options": [
+      "La inicialización aleatoria de los centroides",
+      "El número de dimensiones del espacio de características",
+      "El uso de la distancia euclidiana en lugar de Manhattan",
+      "La codificación de variables categóricas como enteros"
+    ],
+    "answer": "La inicialización aleatoria de los centroides",
+    "explanation": "El algoritmo k-means es sensible a la elección inicial de los centroides, lo que puede llevarlo a converger en mínimos locales en lugar de encontrar la partición óptima."
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones sobre redes neuronales profundas es incorrecta?",
+    "options": [
+      "Usar únicamente capas lineales sin funciones de activación hace que la red sea equivalente a una sola capa lineal",
+      "El uso excesivo de neuronas con ReLU puede conducir al problema del 'dying ReLU'",
+      "La función de activación tanh es preferida sobre ReLU cuando se desea evitar saturación en entradas positivas",
+      "El gradiente de una neurona con activación ReLU es cero si recibe una entrada negativa"
+    ],
+    "answer": "La función de activación tanh es preferida sobre ReLU cuando se desea evitar saturación en entradas positivas",
+    "explanation": "La función tanh también sufre de saturación en sus extremos, y no evita el problema de gradientes que desaparecen mejor que ReLU; de hecho, ReLU es preferida para redes profundas por su comportamiento no saturado en entradas positivas."
+  },
+  {
+    "question": "Al construir un árbol de decisión, ¿cuál de las siguientes condiciones puede llevar a sobreajuste?",
+    "options": [
+      "Permitir que el árbol crezca hasta que cada hoja tenga solo un ejemplo",
+      "Utilizar una función de impureza basada en la entropía",
+      "Limitar la profundidad del árbol a un valor bajo",
+      "Usar datos preprocesados con codificación one-hot"
+    ],
+    "answer": "Permitir que el árbol crezca hasta que cada hoja tenga solo un ejemplo",
+    "explanation": "Un árbol muy profundo que memoriza el conjunto de entrenamiento tiende a sobreajustar y generaliza mal. Controlar la profundidad y otros parámetros ayuda a evitarlo."
+  },
+  {
+    "question": "¿Cuál de los siguientes factores NO afecta directamente el rendimiento del algoritmo k-NN?",
+    "options": [
+      "La elección de la métrica de distancia",
+      "El valor de k utilizado para la predicción",
+      "La codificación de etiquetas en clasificación binaria",
+      "La escala de las variables de entrada"
+    ],
+    "answer": "La codificación de etiquetas en clasificación binaria",
+    "explanation": "k-NN se basa en distancias entre puntos de entrada; la codificación de las etiquetas no afecta el cálculo de similitud ni las predicciones cuando se usa votación mayoritaria."
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones es verdadera en el contexto de transferencia de aprendizaje?",
+    "options": [
+      "En fine-tuning, se congelan todas las capas del modelo preentrenado y solo se entrena la nueva capa de salida",
+      "La extracción de características consiste en ajustar todas las capas del modelo a una nueva tarea",
+      "Transfer learning requiere que el conjunto de datos destino sea mucho más grande que el conjunto fuente",
+      "En fine-tuning, se entrena parte o la totalidad del modelo preentrenado con una tasa de aprendizaje baja"
+    ],
+    "answer": "En fine-tuning, se entrena parte o la totalidad del modelo preentrenado con una tasa de aprendizaje baja",
+    "explanation": "En fine-tuning se ajustan los pesos del modelo preentrenado (a veces parcialmente) junto con nuevas capas, usando tasas de aprendizaje pequeñas para evitar destruir conocimiento previamente adquirido."
+  },
+  {
+    "question": "¿Cuál es un error común al usar el conjunto de prueba durante el proceso de selección de modelo?",
+    "options": [
+      "Usar el conjunto de prueba para estimar el error general de generalización",
+      "Dividir el conjunto de entrenamiento en un subconjunto de validación para ajuste de hiperparámetros",
+      "Evaluar distintos modelos sobre el conjunto de prueba para elegir el mejor",
+      "Usar validación cruzada sobre el conjunto de entrenamiento para comparar modelos"
+    ],
+    "answer": "Evaluar distintos modelos sobre el conjunto de prueba para elegir el mejor",
+    "explanation": "Esto produce un sesgo optimista en la estimación del rendimiento. El conjunto de prueba debe usarse solo una vez, después de finalizar toda la selección de modelo."
+  },
+  {
+    "question": "¿Qué afirmación sobre PCA (Análisis de Componentes Principales) es incorrecta?",
+    "options": [
+      "PCA puede ser usado para reducir la dimensionalidad sin perder mucha varianza",
+      "PCA encuentra direcciones ortogonales que maximizan la varianza de los datos proyectados",
+      "PCA debe aplicarse por separado al conjunto de entrenamiento y al conjunto de prueba",
+      "PCA es una técnica de reducción de dimensionalidad basada en la descomposición de la matriz de covarianza"
+    ],
+    "answer": "PCA debe aplicarse por separado al conjunto de entrenamiento y al conjunto de prueba",
+    "explanation": "PCA debe ajustarse solo en el conjunto de entrenamiento. Luego, los datos de prueba se transforman usando esa misma proyección para evitar fuga de datos (data leakage)."
+  },
+  {
+    "question": "En el contexto de la regularización, ¿qué sucede cuando el valor del parámetro λ (lambda) tiende a cero?",
+    "options": [
+      "El modelo se vuelve más complejo y puede sobreajustar los datos de entrenamiento",
+      "El modelo ignora completamente los datos de entrenamiento y predice la media",
+      "Todos los parámetros del modelo se reducen a cero",
+      "El modelo pierde su capacidad de representar relaciones no lineales"
+    ],
+    "answer": "El modelo se vuelve más complejo y puede sobreajustar los datos de entrenamiento",
+    "explanation": "Un λ muy pequeño reduce el efecto de penalización, permitiendo que los parámetros tomen valores grandes, lo que puede llevar a sobreajuste."
+  },
+  {
+    "question": "¿Qué ventaja tiene la regularización L1 sobre L2 cuando se trata de interpretabilidad del modelo?",
+    "options": [
+      "L1 tiende a generar modelos más esparsos, lo cual facilita la interpretación",
+      "L1 siempre mejora la precisión respecto a L2",
+      "L1 produce coeficientes más pequeños pero distribuidos equitativamente",
+      "L1 solo penaliza la complejidad del modelo, pero no mejora la generalización"
+    ],
+    "answer": "L1 tiende a generar modelos más esparsos, lo cual facilita la interpretación",
+    "explanation": "L1 puede llevar coeficientes exactamente a cero, eliminando características irrelevantes y haciendo que el modelo sea más interpretable."
+  },
+  {
+    "question": "¿Cuál es una característica clave del algoritmo de regresión logística?",
+    "options": [
+      "La salida es una probabilidad entre 0 y 1 gracias a la función sigmoide",
+      "Minimiza la varianza de las predicciones usando la función de costo cuadrático",
+      "Genera una frontera de decisión no lineal por defecto",
+      "Utiliza distancias euclidianas para clasificar nuevos puntos"
+    ],
+    "answer": "La salida es una probabilidad entre 0 y 1 gracias a la función sigmoide",
+    "explanation": "La función sigmoide convierte la combinación lineal de características en una probabilidad, adecuada para tareas de clasificación binaria."
+  },
+  {
+    "question": "¿Cuál es un error común al realizar validación cruzada para ajustar hiperparámetros?",
+    "options": [
+      "Elegir el modelo final usando el conjunto de prueba en lugar del conjunto de validación",
+      "Aplicar validación cruzada solo dentro del conjunto de entrenamiento",
+      "Dividir aleatoriamente los datos en K particiones iguales",
+      "Usar validación cruzada estratificada para problemas de clasificación"
+    ],
+    "answer": "Elegir el modelo final usando el conjunto de prueba en lugar del conjunto de validación",
+    "explanation": "El conjunto de prueba debe reservarse exclusivamente para la evaluación final. Elegir hiperparámetros en función del test set compromete la estimación del error de generalización."
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones sobre Transfer Learning en modelos de lenguaje es incorrecta?",
+    "options": [
+      "En NLP, es común reutilizar modelos preentrenados como BERT y ajustar sus capas finales para tareas específicas",
+      "La fine-tuning en modelos de lenguaje implica usualmente tasas de aprendizaje pequeñas para evitar sobrescribir el conocimiento preentrenado",
+      "Transfer learning es más efectivo cuando las tareas de origen y destino son completamente diferentes y no comparten ningún dominio",
+      "Una estrategia común es congelar capas inferiores y solo entrenar las superiores para adaptarse a la nueva tarea"
+    ],
+    "answer": "Transfer learning es más efectivo cuando las tareas de origen y destino son completamente diferentes y no comparten ningún dominio",
+    "explanation": "Transfer learning funciona mejor cuando las tareas tienen similitudes; si son completamente distintas, el conocimiento preentrenado es menos útil o incluso perjudicial."
+  },
+  {
+    "question": "¿Qué afirmación sobre K-Fold Cross Validation es técnicamente incorrecta?",
+    "options": [
+      "En K-Fold, cada punto de datos se usa exactamente una vez como parte del conjunto de validación",
+      "La validación cruzada estratificada garantiza que cada fold tenga una distribución balanceada de clases",
+      "LOOCV es una versión extrema de K-Fold donde K = número de muestras",
+      "El uso de K-Fold garantiza una evaluación no sesgada del rendimiento del modelo en el conjunto de prueba final"
+    ],
+    "answer": "El uso de K-Fold garantiza una evaluación no sesgada del rendimiento del modelo en el conjunto de prueba final",
+    "explanation": "K-Fold evalúa el modelo dentro del conjunto de entrenamiento. Si se usa para ajustar hiperparámetros, el test set final debe mantenerse completamente independiente para evitar sesgos."
+  },
+  {
+    "question": "¿Qué situación representa una mala elección al comparar modelos de clasificación?",
+    "options": [
+      "Comparar accuracy entre modelos cuando el dataset está fuertemente desbalanceado",
+      "Utilizar F1-score en problemas de clasificación binaria con clases desbalanceadas",
+      "Comparar modelos usando el mismo conjunto de validación",
+      "Aplicar la misma métrica a modelos entrenados sobre el mismo conjunto de entrenamiento"
+    ],
+    "answer": "Comparar accuracy entre modelos cuando el dataset está fuertemente desbalanceado",
+    "explanation": "La accuracy puede ser engañosa en datasets desbalanceados, donde un modelo trivial puede tener alta precisión sin captar la clase minoritaria. Métricas como F1, precisión/recall son más informativas."
+  },
+  {
+    "question": "¿Cuál de las siguientes es una razón válida para preferir redes convolucionales (CNNs) sobre redes completamente conectadas en tareas de visión por computadora?",
+    "options": [
+      "Las CNNs aprenden pesos independientes para cada pixel, lo que mejora la resolución",
+      "Las CNNs tienen menos parámetros gracias a la reutilización de filtros, lo que las hace más eficientes",
+      "Las CNNs usan activaciones sigmoide exclusivamente para detectar bordes",
+      "Las CNNs requieren que todas las imágenes sean del mismo color para detectar patrones"
+    ],
+    "answer": "Las CNNs tienen menos parámetros gracias a la reutilización de filtros, lo que las hace más eficientes",
+    "explanation": "Las CNNs aprovechan la estructura espacial de los datos mediante convoluciones, reutilizando filtros y reduciendo el número de parámetros en comparación con redes densas."
+  },
+  {
+    "question": "¿Cuál es una ventaja de usar modelos no paramétricos como k-NN frente a modelos paramétricos como la regresión logística?",
+    "options": [
+      "k-NN requiere menos datos de entrenamiento para alcanzar alta precisión",
+      "k-NN puede adaptarse mejor a estructuras locales complejas sin suponer una forma funcional",
+      "k-NN generaliza mejor que los modelos paramétricos en datos ruidosos",
+      "k-NN proporciona automáticamente interpretabilidad de los coeficientes"
+    ],
+    "answer": "k-NN puede adaptarse mejor a estructuras locales complejas sin suponer una forma funcional",
+    "explanation": "Como modelo no paramétrico, k-NN no asume una estructura global para los datos y se adapta localmente, lo que lo hace flexible para patrones complejos."
+  },
+  {
+    "question": "¿Qué técnica es más adecuada para abordar el problema de sobreajuste en un modelo de árbol de decisión?",
+    "options": [
+      "Podar el árbol después de su construcción",
+      "Aumentar la profundidad máxima del árbol",
+      "Usar una función de costo diferente",
+      "Eliminar características irrelevantes"
+    ],
+    "answer": "Podar el árbol después de su construcción",
+    "explanation": "La poda reduce la complejidad del árbol eliminando ramas que aportan poco a la predicción, ayudando a mejorar la generalización."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de la técnica de dropout en redes neuronales?",
+    "options": [
+      "Reducir el sobreajuste al desactivar aleatoriamente neuronas durante el entrenamiento",
+      "Aumentar la capacidad del modelo al agregar más neuronas",
+      "Mejorar la convergencia del modelo al reducir la tasa de aprendizaje",
+      "Acelerar el entrenamiento al eliminar capas enteras"
+    ],
+    "answer": "Reducir el sobreajuste al desactivar aleatoriamente neuronas durante el entrenamiento",
+    "explanation": "Dropout ayuda a prevenir el sobreajuste al forzar a la red a aprender representaciones más robustas, ya que no puede depender de neuronas específicas."
+  },
+  {
+    "question": "¿Qué técnica es más adecuada para abordar el problema de desbalanceo en un conjunto de datos de clasificación?",
+    "options": [
+      "Sobremuestreo de la clase minoritaria o submuestreo de la clase mayoritaria",
+      "Aumentar el tamaño del conjunto de prueba",
+      "Usar una función de activación diferente",
+      "Ajustar la tasa de aprendizaje"
+    ],
+    "answer": "Sobremuestreo de la clase minoritaria o submuestreo de la clase mayoritaria",
+    "explanation": "El sobremuestreo y submuestreo son técnicas comunes para equilibrar clases en conjuntos desbalanceados, mejorando el rendimiento del modelo."
+  },
+  {
+    "question": "¿Cuál es el propósito de la función de activación softmax en la capa de salida de una red neuronal?",
+    "options": [
+      "Convertir las salidas en probabilidades que suman 1 para clasificación multiclase",
+      "Aumentar la no linealidad del modelo",
+      "Reducir el riesgo de sobreajuste",
+      "Normalizar los datos de entrada"
+    ],
+    "answer": "Convertir las salidas en probabilidades que suman 1 para clasificación multiclase",
+    "explanation": "Softmax transforma las salidas de la red en un vector de probabilidades, útil para tareas de clasificación multiclase."
+  },
+  {
+    "question": "¿Qué técnica es más adecuada para abordar el problema de multicolinealidad en un modelo de regresión lineal?",
+    "options": [
+      "Regularización L2 (Ridge)",
+      "Aumentar el tamaño del conjunto de entrenamiento",
+      "Eliminar todas las variables independientes",
+      "Usar una función de activación diferente"
+    ],
+    "answer": "Regularización L2 (Ridge)",
+    "explanation": "La regularización L2 penaliza los coeficientes grandes, ayudando a mitigar el efecto de la multicolinealidad al reducir la varianza del modelo."
+  },
+  {
+    "question": "¿Cuál es el propósito de la técnica de early stopping en el entrenamiento de redes neuronales?",
+    "options": [
+      "Detener el entrenamiento cuando el rendimiento en el conjunto de validación comienza a empeorar",
+      "Aumentar la tasa de aprendizaje para acelerar la convergencia",
+      "Reducir la complejidad del modelo al eliminar capas",
+      "Ajustar los hiperparámetros del modelo"
+    ],
+    "answer": "Detener el entrenamiento cuando el rendimiento en el conjunto de validación comienza a empeorar",
+    "explanation": "Early stopping previene el sobreajuste al detener el entrenamiento antes de que el modelo comience a memorizar los datos de entrenamiento." 
+  },
+  {
+    "question": "¿Qué técnica es más adecuada para abordar el problema de ruido en los datos de entrenamiento?",
+    "options": [
+      "Regularización L1 o L2",
+      "Aumentar la tasa de aprendizaje",
+      "Reducir el tamaño del conjunto de entrenamiento",
+      "Usar una función de activación diferente"
+    ],
+    "answer": "Regularización L1 o L2",
+    "explanation": "La regularización ayuda a reducir el impacto del ruido al penalizar coeficientes grandes, mejorando la generalización del modelo."
+  },
+  {
+    "question": "¿Cuál es el propósito de la técnica de batch normalization en redes neuronales?",
+    "options": [
+      "Normalizar las activaciones de cada capa para mejorar la estabilidad y velocidad de entrenamiento",
+      "Aumentar la complejidad del modelo al agregar más capas",
+      "Reducir el tamaño del conjunto de entrenamiento",
+      "Eliminar características irrelevantes"
+    ],
+    "answer": "Normalizar las activaciones de cada capa para mejorar la estabilidad y velocidad de entrenamiento",
+    "explanation": "Batch normalization normaliza las salidas de una capa, lo que ayuda a estabilizar el aprendizaje y permite usar tasas de aprendizaje más altas."
+  }
+]

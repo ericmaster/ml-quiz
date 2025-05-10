@@ -1,0 +1,222 @@
+[
+  {
+    "question": "What does a high variance in model performance across validation folds suggest?",
+    "options": [
+      "The model is too simple",
+      "The dataset is well-balanced",
+      "The model is overfitting",
+      "Cross-validation is inappropriate"
+    ],
+    "answer": "The model is overfitting",
+    "explanation": "High variance across folds often indicates sensitivity to training data, a hallmark of overfitting."
+  },
+  {
+    "question": "Which of the following metrics is most appropriate for comparing models with different numbers of parameters?",
+    "options": [
+      "Mean Squared Error",
+      "Accuracy",
+      "Akaike Information Criterion (AIC)",
+      "R-squared"
+    ],
+    "answer": "Akaike Information Criterion (AIC)",
+    "explanation": "AIC penalizes model complexity, making it suitable for model comparison."
+  },
+  {
+    "question": "Why is the validation set essential in model selection?",
+    "options": [
+      "To evaluate the model's performance on the training data",
+      "To tune hyperparameters without contaminating the test set",
+      "To perform final model testing",
+      "To detect data leakage"
+    ],
+    "answer": "To tune hyperparameters without contaminating the test set",
+    "explanation": "Validation sets enable unbiased hyperparameter tuning, preserving the test set for final evaluation."
+  },
+  {
+    "question": "Which cross-validation strategy is most appropriate for time-series data?",
+    "options": [
+      "K-fold cross-validation",
+      "Stratified K-fold",
+      "Leave-one-out",
+      "Forward chaining"
+    ],
+    "answer": "Forward chaining",
+    "explanation": "Forward chaining respects temporal order, which is crucial in time-series settings."
+  },
+  {
+    "question": "Which model selection approach explicitly balances bias and variance?",
+    "options": [
+      "Training error minimization",
+      "AIC/BIC criteria",
+      "Cross-validation",
+      "Bootstrap aggregation"
+    ],
+    "answer": "Cross-validation",
+    "explanation": "Cross-validation assesses generalization by testing on multiple held-out sets, balancing bias and variance."
+  },
+  {
+    "question": "What is the primary drawback of using the training error to evaluate model performance?",
+    "options": [
+      "It overestimates generalization error",
+      "It requires complex computation",
+      "It assumes test data is available",
+      "It underestimates model capacity"
+    ],
+    "answer": "It overestimates generalization error",
+    "explanation": "Training error is optimistically biased and doesn't reflect true model performance on unseen data."
+  },
+  {
+    "question": "Why might increasing model complexity improve training accuracy but harm test accuracy?",
+    "options": [
+      "It introduces underfitting",
+      "It over-regularizes the model",
+      "It reduces training set variance",
+      "It causes overfitting"
+    ],
+    "answer": "It causes overfitting",
+    "explanation": "Complex models may memorize training data but fail to generalize."
+  },
+  {
+    "question": "Which of the following best defines underfitting?",
+    "options": [
+      "Low training error and high test error",
+      "High training error and low test error",
+      "High error on both training and test data",
+      "Model performs well on irrelevant features"
+    ],
+    "answer": "High error on both training and test data",
+    "explanation": "Underfitting indicates a model too simple to capture patterns even in training data."
+  },
+  {
+    "question": "Which scenario makes leave-one-out cross-validation (LOOCV) computationally expensive?",
+    "options": [
+      "When the model has high bias",
+      "When the dataset has many features",
+      "When the dataset has many samples",
+      "When feature scaling is required"
+    ],
+    "answer": "When the dataset has many samples",
+    "explanation": "LOOCV trains as many models as there are samples, making it computationally heavy with large datasets."
+  },
+  {
+    "question": "Which criterion explicitly includes a penalty term for the number of parameters?",
+    "options": [
+      "R-squared",
+      "Mean Absolute Error",
+      "AIC",
+      "Accuracy"
+    ],
+    "answer": "AIC",
+    "explanation": "AIC includes a complexity penalty proportional to the number of parameters."
+  },
+  {
+    "question": "Which method can be used to estimate the uncertainty of a model selection process?",
+    "options": [
+      "Gradient descent",
+      "Bootstrapping",
+      "Regularization",
+      "Normalization"
+    ],
+    "answer": "Bootstrapping",
+    "explanation": "Bootstrapping provides confidence intervals by sampling multiple resamples of data."
+  },
+  {
+    "question": "Why might BIC select a simpler model than AIC?",
+    "options": [
+      "BIC uses a smaller penalty term",
+      "BIC is based on posterior probabilities",
+      "BIC penalizes model complexity more heavily",
+      "BIC is used for non-parametric models"
+    ],
+    "answer": "BIC penalizes model complexity more heavily",
+    "explanation": "BIC includes a stronger penalty term, leading to a preference for simpler models."
+  },
+  {
+    "question": "Which statement about model selection using a validation set is true?",
+    "options": [
+      "Validation error estimates training performance",
+      "Test error must be used to tune hyperparameters",
+      "Validation error approximates generalization performance",
+      "Validation sets should be larger than test sets"
+    ],
+    "answer": "Validation error approximates generalization performance",
+    "explanation": "Validation performance is a proxy for test performance during model tuning."
+  },
+  {
+    "question": "What is the primary purpose of using a test set?",
+    "options": [
+      "To compute gradients for training",
+      "To compare multiple models during tuning",
+      "To estimate final generalization performance",
+      "To detect data leakage"
+    ],
+    "answer": "To estimate final generalization performance",
+    "explanation": "Test sets provide an unbiased evaluation after model selection is complete."
+  },
+  {
+    "question": "Which of the following best explains model overfitting?",
+    "options": [
+      "The model has insufficient features",
+      "The model is not updated for each epoch",
+      "The model captures noise as if it were signal",
+      "The model lacks regularization"
+    ],
+    "answer": "The model captures noise as if it were signal",
+    "explanation": "Overfitting occurs when models memorize noise in training data."
+  },
+  {
+    "question": "How does stratified k-fold differ from regular k-fold cross-validation?",
+    "options": [
+      "It reduces bias by training on fewer examples",
+      "It ensures equal number of features across folds",
+      "It maintains class distribution across folds",
+      "It trains each fold on only a single feature"
+    ],
+    "answer": "It maintains class distribution across folds",
+    "explanation": "Stratified folds preserve the class proportions, useful for classification tasks."
+  },
+  {
+    "question": "Which of the following would most likely lead to data leakage?",
+    "options": [
+      "Using a complex model",
+      "Normalizing data after train-test split",
+      "Using test set information in training",
+      "High model variance"
+    ],
+    "answer": "Using test set information in training",
+    "explanation": "Leaking test data into training biases evaluation and invalidates performance metrics."
+  },
+  {
+    "question": "What effect does increasing the number of folds in cross-validation have?",
+    "options": [
+      "Increases training error",
+      "Decreases test error",
+      "Decreases bias but increases variance",
+      "Increases bias and decreases variance"
+    ],
+    "answer": "Decreases bias but increases variance",
+    "explanation": "More folds use more training data, reducing bias but making estimates noisier."
+  },
+  {
+    "question": "Which model evaluation strategy is most robust when data is limited?",
+    "options": [
+      "Train-test split",
+      "Leave-one-out CV",
+      "10-fold cross-validation",
+      "Validation on test set"
+    ],
+    "answer": "Leave-one-out CV",
+    "explanation": "LOOCV uses nearly all data for training each time, maximizing use of limited samples."
+  },
+  {
+    "question": "Which of the following is not a goal of model selection?",
+    "options": [
+      "To improve model interpretability",
+      "To find the model with lowest training error",
+      "To balance bias and variance",
+      "To select the model with best generalization"
+    ],
+    "answer": "To find the model with lowest training error",
+    "explanation": "Training error alone is not indicative of a good generalizing model."
+  }
+]
